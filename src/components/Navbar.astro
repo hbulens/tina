@@ -66,7 +66,7 @@ import Container from "./Container.astro";
 </header>
 
 <script is:inline>
-  document.addEventListener("DOMContentLoaded", () => {
+  const menu = () => {
     const navbar = document.getElementById("navbar-default");
 
     // Check if navbar exists before adding event listeners
@@ -94,5 +94,8 @@ import Container from "./Container.astro";
         "Navbar element with ID 'navbar-default' not found. Navigation functionality might be affected.",
       );
     }
-  });
+  };
+
+  document.addEventListener("DOMContentLoaded", menu);
+  document.addEventListener("astro:after-swap", menu);
 </script>

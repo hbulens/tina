@@ -3,7 +3,7 @@
     "id": 1,
     "name1": "Málaga",
     "name2": "",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white ",
     "arrow": "/the-average-cyclist/services/ag.svg",
     "link": "/the-average-cyclist/destinations/malaga",
     "image": "/the-average-cyclist/pages/root/3.jpg"
@@ -52,5 +52,14 @@
     "arrow": "/the-average-cyclist/services/aw.svg",
     "link": "/the-average-cyclist/destinations/pyrenees",
     "image": "/the-average-cyclist/pages/root/5.jpg"
+  },
+  {
+    "id": 7,
+    "name1": "Girona",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/the-average-cyclist/services/aw.svg",
+    "link": "/the-average-cyclist/destinations/girona",
+    "image": "/the-average-cyclist/pages/root/3.jpg"
   }
 ]
