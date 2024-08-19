@@ -15,7 +15,7 @@ export default {
       stone: "#231F20",
       orange: "#e86100",
       zinc: {
-        100: "#F3F3F3",
+        100: "#f6b511",
         200: "#F0F0F0",
         300: "#D9D9D9",
         400: "#D8D8D8",
@@ -23,7 +23,7 @@ export default {
         600: "#B0B0B0",
         700: "#787878",
         800: "#292A32",
-        900: "#191A23",
+        900: "#af9469",
       },
     },
     boxShadow: {
@@ -33,6 +33,10 @@ export default {
       fontFamily: {
         SpaceGrotesk: ["Space Grotesk", "sans-serif"],
       },
+      lineHeight: {
+        'extra-loose': '2.5',
+        '12': '5rem',
+      }
     },
   },
 };
