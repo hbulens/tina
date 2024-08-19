@@ -8,5 +8,8 @@ export default defineConfig({
   integrations: [tailwind(), sitemap(), react()],
   site: "https://hbulens.github.io",
   base: "/the-average-cyclist",
-  output: "static"
+  output: "static",
+  vite: {
+    assetsInclude: ['**/*.gpx'],
+  }
 });

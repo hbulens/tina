@@ -1,6 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
+import RouteVisualizer from "@/components/route";
 ---
 
 <style>
@@ -29,105 +30,69 @@ import Container from "@/components/Container.astro";
 
   <main class="space-y-20 mt-8">
     <Container>
-      <div class="w-full">
-        <div class="flex flex-col w-full mb-10 sm:flex-row">
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    320 sunny days a year
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">Lots of good weather.</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2">
-            <div class="relative h-full ml-0 md:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Well-connected airport
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  The international airport is just 10 kilometers from the city
-                  center, and is well connected with the rest of Europe.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div class="w-full text-lg font-normal pb-8">
+        <h2 class="text-3xl font-medium leading-none">Stats</h2>
+        <ul>
+          <li>Distance: XXX km</li>
+          <li>Difficulty: hard</li>
+        </ul>
+
+        <div class="mt-4">
+          <RouteVisualizer client:only="react" />
         </div>
-        <div class="flex flex-col w-full mb-5 sm:flex-row">
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Great climbs
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">TBD</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Cycling community
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  Málaga is a trending area for cycling. Many cycling clubs and
-                  bike shops organize events for you to join.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2">
-            <div class="relative h-full ml-0 md:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Good roads
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  Some patches of road can be improved on, but in general the
-                  roads are in great condition.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
+
+      <div class="w-full text-lg font-normal pb-8">
+        <h2 class="text-3xl font-medium leading-none">The route</h2>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div class="w-full text-lg font-normal pb-8">
+        <h2 class="text-3xl font-medium leading-none">Fueling up</h2>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <p class="mt-4">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
       </div>
     </Container>
   </main>
