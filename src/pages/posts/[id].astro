@@ -3,27 +3,27 @@ import Container from "../../components/Container.astro";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const allPosts: any[] = await Astro.glob("../../posts/*.md");
+  const allPosts: any[] = await Astro.glob("../../posts/*.md");
 
-    return allPosts.map((x: any) => {
-        const { id, title, publish_date, description, author, image } =
-            x.frontmatter;
+  return allPosts.map((x: any) => {
+    const { id, title, publish_date, description, author, image } =
+      x.frontmatter;
 
-        console.log(x);
+    console.log(x);
 
-        return {
-            params: { id },
-            props: {
-                id,
-                title,
-                publish_date,
-                description,
-                author,
-                image,
-                post: x,
-            },
-        };
-    });
+    return {
+      params: { id },
+      props: {
+        id,
+        title,
+        publish_date,
+        description,
+        author,
+        image,
+        post: x,
+      },
+    };
+  });
 }
 
 const { title, publish_date, description, author, image, post } = Astro.props;
@@ -32,40 +32,40 @@ const { Content } = post;
 ---
 
 <Layout title="Welcome to My site">
-    <main class="space-y-40 mb-40 pt-24">
-        <Container>
-            <section class="bg-white">
-                <div
-                    class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:py-16 lg:px-6"
-                >
-                    <div class="font-light text-gray-500 sm:text-lg">
-                        <h2
-                            class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
-                        >
-                            {title}
-                        </h2>
-                        <p class="mb-4">{description}</p>
+  <main class="space-y-40 mb-40 pt-24">
+    <Container>
+      <section class="bg-white">
+        <div
+          class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:py-16 lg:px-6"
+        >
+          <div class="font-light text-gray-500 sm:text-lg">
+            <h2
+              class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900"
+            >
+              {title}
+            </h2>
+            <p class="mb-4">{description}</p>
 
-                        <div class="flex justify-between items-center mt-6">
-                            <div class="flex items-center space-x-4">
-                                <img
-                                    class="w-7 h-7 rounded-full"
-                                    src="/the-average-cyclist/hendrik.png"
-                                    alt={author + " cover"}
-                                />
-                                <span class="font-medium">
-                                    {author}
-                                </span>
-                            </div>
-                            <span class="text-sm">{publish_date}</span>
-                        </div>
+            <div class="flex justify-between items-center mt-6">
+              <div class="flex items-center space-x-4">
+                <img
+                  class="w-7 h-7 rounded-full"
+                  src="/the-average-cyclist/hendrik.png"
+                  alt={author + " cover"}
+                />
+                <span class="font-medium">
+                  {author}
+                </span>
+              </div>
+              <span class="text-sm">{publish_date}</span>
+            </div>
 
-                        <div class="mt-8">
-                            <Content />
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </Container>
-    </main>
+            <div class="mt-8">
+              <Content />
+            </div>
+          </div>
+        </div>
+      </section>
+    </Container>
+  </main>
 </Layout>

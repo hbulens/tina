@@ -1,47 +1,35 @@
 ---
-import Container from "../components/Container.astro"
-import Layout from '../layouts/Layout.astro';
-import Team from "../components/Team.astro";
+import Container from "../components/Container.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Welcome to My site">
-	<main class="space-y-20">
-		<Container>
-            <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
-                <div class="row items-center py-5 md:pb-20 md:pt-10">
-                    <div class="text-center space-y-10">
-                        <h2 class="text-5xl font-medium leading-none md:text-6xl">We Navigate the <br> digital landscape <br> for success</h2>
-                        <p class="mt-6 mb-8  text-xl font-normal leading-7 sm:mb-12">Our digital marketing agency helps businesses grow and succeed online through a range of services including SEO, PPC, social media marketing, and content creation.</p>
-                        <a class="px-9 py-5 bg-zinc-900 hover:bg-white text-white hover:text-black border rounded-2xl justify-items-center md:justify-items-start gap-2.5 inline-flex" rel="noopener noreferrer"  href="https://github.com/manulthanura/The Average Cyclist" target="_blank">
-                            <h2 class="text-center text-xl font-normal leading-7">Book a consultation</h2>
-                        </a>
-                    </div>
-                </div>
-            </div>
+<Layout title="About">
+  <main class="space-y-20">
+    <Container>
+        <h2 class="text-5xl font-medium leading-none md:text-6xl">
+            The average cyclist
+          </h2>
+      <div class="columns-2">
+        <div class="row items-center py-5 md:pb-20 md:pt-10">
+          <div class="space-y-4">          
+            <p class="leading-7">
+                A long-term traveler with a deep love for discovering new places, I spent years exploring South America, Europe, and Southeast Asia before deciding to stay in Andalucía.                 
+            </p>
+
+            <p class="leading-7">
+                Drawn by the region’s rich culture, stunning landscapes, and endless sunshine, I found the perfect spot to settle for a while. It’s here in Spain that I rekindled my passion for cycling, thanks to the excellent roads and scenic routes that the area offers.         
+                Now, my journey continues with a blend of local living and exploring the beauty of Andalucía, one ride at a time.
+            </p>
+
+            <p class="leading-7">
+                Although I’m reasonably well-trained, I’m an exactly average cyclist—on Strava and timed sections of challenges, you’ll usually find me somewhere near the middle of the pack. This website is for regular riders like me—those who love getting out on the weekends but don’t have the time to ride five times a week or spend 20 hours on the bike. 
+                If you’re looking for relatable cycling stories, routes, and tips that fit into a balanced life, you’re in the right place.
+            </p>
             
-            <div class="flex-row items-center">
-                <div class="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-6">
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/01.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/02.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/03.svg" class="h-9 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/04.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 flex grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/05.svg" class="h-8 w-auto m-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                    <div class="p-4 grayscale transition duration-200 hover:grayscale-0">
-                        <img src="./clients/06.svg" class="h-12 w-auto mx-auto" loading="lazy" alt="client logo" width="" height="" />
-                    </div>
-                </div>
-            </div>
-        </Container>
-        <Team/>
-	</main>
+          </div>
+        </div>
+        <img class="pl-4" src="/the-average-cyclist/hendrik.png" />
+      </div>
+    </Container>
+  </main>
 </Layout>
