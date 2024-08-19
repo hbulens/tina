@@ -2,33 +2,43 @@
 import Container from "./Container.astro";
 
 const items = [
-"/the-average-cyclist/pages/root/velefique.jpg",
-"/the-average-cyclist/pages/root/2.jpg",
-"/the-average-cyclist/pages/root/3.jpg",
-"/the-average-cyclist/pages/root/4.jpg"
-]
+  "/the-average-cyclist/pages/root/velefique.jpg",
+  "/the-average-cyclist/pages/root/2.jpg",
+  "/the-average-cyclist/pages/root/3.jpg",
+  "/the-average-cyclist/pages/root/4.jpg",
+];
 
-var item = items[Math.floor(Math.random()*items.length)];
-
+var item = items[Math.floor(Math.random() * items.length)];
 ---
 
 <Container>
-  <div class="relative flex flex-col-reverse items-center md:flex-row" id="hero">
+  <div
+    class="relative flex flex-col-reverse items-center md:flex-row"
+    id="hero"
+  >
     <div class="row items-center py-5 md:w-6/12 md:pb-20 md:pt-10">
       <div class="text-left space-y-3">
         <h1 class="text-5xl mb-8 font-medium leading-none md:text-6xl">
           Your bike guide <br /> on the Spanish roads
         </h1>
         <p class="mt-30 mb-8 text-xl font-normal leading-7 sm:mb-12">
-          This website helps you discover both popular routes and hidden gems across Andalucía, whether you're planning an epic ride or just looking for a scenic spin during your holiday.
+          This website helps you discover both popular routes and hidden gems
+          across Andalucía, whether you're planning an epic ride or just looking
+          for a scenic spin during your holiday.
         </p>
         <p class="mt-30 mb-8 text-xl font-normal leading-7 sm:mb-12">
-          Perfect for cyclists of all levels, it offers curated routes and insights for everyone—from dedicated riders to casual cyclists seeking a memorable day out.
-        </p>        
+          Perfect for cyclists of all levels, it offers curated routes and
+          insights for everyone—from dedicated riders to casual cyclists seeking
+          a memorable day out.
+        </p>
       </div>
     </div>
     <div class="flex py-5 md:w-6/12 md:pb-20 md:pt-10 pl-6">
-      <img src={item} alt="Cycling Spain" class="object-contain w-full rounded-xl " />
+      <img
+        src={item}
+        alt="Cycling Spain"
+        class="object-contain w-full rounded-xl"
+      />
     </div>
   </div>
 </Container>

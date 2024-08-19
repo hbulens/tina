@@ -3,54 +3,54 @@
     "id": 1,
     "name1": "Málaga",
     "name2": "",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/the-average-cyclist/services/ag.svg",
     "link": "/the-average-cyclist/destinations/malaga",
-    "image": "./services/01.svg"
+    "image": "/the-average-cyclist/pages/root/3.jpg"
   },
   {
     "id": 2,
     "name1": "Calp",
     "name2": "",
-    "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
+    "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/the-average-cyclist/services/ag.svg",
     "link": "/the-average-cyclist/destinations/calp",
-    "image": "./services/02.svg"
+    "image": "/the-average-cyclist/pages/root/2.jpg"
   },
   {
     "id": 3,
     "name1": "Granada",
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
-    "link": "/the-average-cyclist/destinations/malaga",
-    "image": "./services/03.svg"
+    "arrow": "/the-average-cyclist/services/aw.svg",
+    "link": "/the-average-cyclist/destinations/granada",
+    "image": "/the-average-cyclist/pages/root/2.jpg"
   },
   {
     "id": 4,
     "name1": "Asturias",
     "name2": "",
-    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
-    "link": "/the-average-cyclist/destinations/malaga",
-    "image": "./services/04.svg"
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/the-average-cyclist/services/ag.svg",
+    "link": "/the-average-cyclist/destinations/asturias",
+    "image": "/the-average-cyclist/pages/root/3.jpg"
   },
   {
     "id": 5,
     "name1": "Madrid",
     "name2": "",
-    "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
-    "arrow": "./services/ag.svg",
-    "link": "/the-average-cyclist/destinations/malaga",
-    "image": "./services/05.svg"
+    "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/the-average-cyclist/services/ag.svg",
+    "link": "/the-average-cyclist/destinations/madrid",
+    "image": "/the-average-cyclist/pages/root/4.jpg"
   },
   {
     "id": 6,
     "name1": "Pyrenees",
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
-    "arrow": "./services/aw.svg",
-    "link": "/the-average-cyclist/destinations/malaga",
-    "image": "./services/06.svg"
+    "arrow": "/the-average-cyclist/services/aw.svg",
+    "link": "/the-average-cyclist/destinations/pyrenees",
+    "image": "/the-average-cyclist/pages/root/5.jpg"
   }
 ]
