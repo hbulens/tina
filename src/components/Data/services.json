@@ -5,7 +5,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "/the-average-cyclist/destinations/malaga",
     "image": "./services/01.svg"
   },
   {
@@ -14,7 +14,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "/the-average-cyclist/destinations/calp",
     "image": "./services/02.svg"
   },
   {
@@ -23,7 +23,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
-    "link": "./",
+    "link": "/the-average-cyclist/destinations/malaga",
     "image": "./services/03.svg"
   },
   {
@@ -32,7 +32,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "/the-average-cyclist/destinations/malaga",
     "image": "./services/04.svg"
   },
   {
@@ -41,7 +41,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-black",
     "arrow": "./services/ag.svg",
-    "link": "./",
+    "link": "/the-average-cyclist/destinations/malaga",
     "image": "./services/05.svg"
   },
   {
@@ -50,7 +50,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "./services/aw.svg",
-    "link": "./",
+    "link": "/the-average-cyclist/destinations/malaga",
     "image": "./services/06.svg"
   }
 ]
