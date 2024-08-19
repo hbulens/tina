@@ -1,6 +1,7 @@
 ---
-import Container from "../../components/Container.astro";
+import Container from "@/components/Container.astro";
 import Layout from "../../layouts/Layout.astro";
+import Comments from "@/components/PostComment";
 
 export async function getStaticPaths() {
   const allPosts: any[] = await Astro.glob("../../content/posts/*.md");
@@ -8,8 +9,6 @@ export async function getStaticPaths() {
   return allPosts.map((x: any) => {
     const { id, title, publish_date, description, author, image } =
       x.frontmatter;
-
-    console.log(x);
 
     return {
       params: { id },
@@ -26,7 +25,10 @@ export async function getStaticPaths() {
   });
 }
 
-const { title, publish_date, description, author, image, post } = Astro.props;
+const { title, publish_date, description, author, image, post, id } =
+  Astro.props;
+const currentPath = Astro.url.pathname;
+
 export const prerender = true;
 const { Content } = post;
 ---
@@ -60,12 +62,29 @@ const { Content } = post;
               <span class="text-sm">{publish_date}</span>
             </div>
 
-            <div class="mt-8">
+            <div class="mt-8 mb-20">
               <Content />
             </div>
+
+            <div id="disqus_thread"></div>
           </div>
         </div>
       </section>
     </Container>
   </main>
 </Layout>
+
+<script is:inline>
+  document.addEventListener("astro:page-load", () => {
+    function disqus_config() {
+      this.page.url = currentPath;
+      this.page.identifier = id;
+    }
+
+    const d = document,
+      s = d.createElement("script");
+    s.src = "https://the-average-cyclist.disqus.com/embed.js";
+    s.setAttribute("data-timestamp", (+new Date()).toString());
+    (d.head || d.body).appendChild(s);
+  });
+</script>
