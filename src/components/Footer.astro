@@ -1,6 +1,15 @@
 ---
 import Container from "./Container.astro";
+const year = new Date().getFullYear();
 ---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+</style>
 
 <footer class="bg-orange bg-fixed bg-bottom text-black">
   <Container>
@@ -9,17 +18,14 @@ import Container from "./Container.astro";
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
           <img class="w-auto" src="/the-average-cyclist/logo.png" alt="Logo" />
         </div>
-        <div class="flex mt-4 md:m-0">
-          <div class="-mx-4">
-            <span id="currentYear"></span> The Average Cyclist
-          </div>
-        </div>
       </div>
+    </div>
+    <div class="py-4">
+      <center>
+        <div class="-mx-4">
+          {year} The Average Cyclist
+        </div>
+      </center>
     </div>
   </Container>
 </footer>
-
-<script is:inline>
-  const year = new Date().getFullYear();
-  document.getElementById("currentYear").innerHTML = `${year}`;
-</script>
