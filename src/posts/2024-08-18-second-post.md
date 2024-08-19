@@ -1,0 +1,70 @@
+---
+id: '2024-08-18-first-post'
+title: 'Cycling routes in Málaga'
+pubDate: 2022-07-01
+description: 'Top Road Bike Routes in Málaga, Spain'
+author: 'Hendrik Bulens'
+image:
+    url: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+tags: ["astro", "blogging", "learning in public"]
+---
+
+**Top Road Bike Routes in Calpe, Spain**
+
+Calpe, located on Spain’s Costa Blanca, is a road cycling paradise known for its challenging climbs, stunning coastal routes, and smooth tarmac. The region's mild climate and diverse terrain have made it a favorite among pro cyclists, with many teams holding training camps here. Here are some of the top road bike routes in Calpe:
+
+<br />
+
+### 1. **Calpe to Cumbre del Sol**
+- **Distance:** 50 km (round trip)
+- **Elevation Gain:** 1,100 meters
+- **Difficulty:** Moderate to Hard
+
+This route takes you from Calpe to the famous climb of Cumbre del Sol, which has been featured multiple times in La Vuelta a España. The ride starts with a flat coastal stretch before reaching the challenging climb at Cumbre del Sol. The ascent is short but steep, with sections reaching over 20% gradient. Once at the top, you’re rewarded with incredible views of the Mediterranean and surrounding cliffs.
+
+<br />
+
+### 2. **Calpe to Coll de Rates**
+- **Distance:** 70 km (round trip)
+- **Elevation Gain:** 1,300 meters
+- **Difficulty:** Moderate
+
+Coll de Rates is one of the most iconic climbs in the Costa Blanca region. Starting in Calpe, the route heads inland through the picturesque villages of Benissa and Parcent before reaching the base of the climb. The ascent is around 6.5 km with an average gradient of 5%, making it a manageable climb with stunning switchbacks and panoramic views. The descent back towards Calpe is smooth and fast, making this a perfect ride for those looking to experience one of the area’s classic climbs.
+
+<br />
+
+### 3. **Calpe to Guadalest**
+- **Distance:** 100 km (loop)
+- **Elevation Gain:** 1,800 meters
+- **Difficulty:** Hard
+
+This challenging loop takes you through some of the most beautiful inland landscapes around Calpe. Starting from the coast, the ride heads towards the historic town of Guadalest, perched high in the mountains. The route includes several climbs, with the final approach to Guadalest being particularly steep. Along the way, you’ll cycle through lush valleys, almond groves, and winding mountain roads. The views from Guadalest’s castle are worth the effort, and the long descent back to Calpe is pure joy.
+
+<br />
+
+### 4. **Calpe to Vall de Laguar**
+- **Distance:** 90 km (round trip)
+- **Elevation Gain:** 1,600 meters
+- **Difficulty:** Hard
+
+This route is for climbers looking for a challenge. Starting from Calpe, you’ll head inland towards the Vall de Laguar, a region known for its switchback climbs and rugged scenery. The ascent to the summit includes over 20 hairpin bends, offering both a physical and technical test. The roads are quiet and lined with dramatic views of the valley and surrounding peaks. On the return journey, you’ll enjoy rolling descents before arriving back on the coast.
+
+<br />
+
+### 5. **Calpe Coastal Loop: Altea and Benidorm**
+- **Distance:** 60 km (loop)
+- **Elevation Gain:** 800 meters
+- **Difficulty:** Easy to Moderate
+
+This scenic coastal loop is perfect for a more relaxed ride while still offering plenty of picturesque views. From Calpe, head south along the coast towards Altea and Benidorm, riding along smooth roads with the Mediterranean at your side. After a flat start, there’s a gentle climb as you approach Altea Hills, followed by a rolling descent into Benidorm. The route then loops back along the coast, offering a pleasant mix of flat stretches and gentle inclines.
+
+<br />
+
+### Tips for Road Cyclists in Calpe:
+- **Season:** Winter and spring are the best times to visit, with cooler temperatures and less crowded roads.
+- **Traffic:** Coastal roads can be busier with tourist traffic, but most inland routes are quiet and cyclist-friendly.
+- **Climbing:** Be prepared for steep gradients, especially on famous climbs like Cumbre del Sol and Vall de Laguar.
+- **Bike Rentals and Shops:** Calpe has plenty of bike rental shops and cafes catering specifically to cyclists, making it easy to get support and supplies.
+
+Calpe is a cyclist’s dream with its diverse range of routes, from challenging mountain climbs to scenic coastal loops. Whether you’re training for a big event or just looking to enjoy a ride with stunning scenery, Calpe offers some of the best road cycling experiences in Spain.

@@ -1,0 +1,68 @@
+---
+id: '2024-08-18-first-post'
+title: 'Cycling routes in Málaga'
+pubDate: 2022-07-01
+description: 'Top Road Bike Routes in Málaga, Spain'
+author: 'Hendrik Bulens'
+image:
+    url: 'https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png'
+    alt: 'The Astro logo on a dark background with a pink glow.'
+tags: ["astro", "blogging", "learning in public"]
+---
+
+**Top Road Bike Routes in Málaga, Spain**
+
+Málaga, with its mix of coastal roads, mountain climbs, and smooth tarmac, is a fantastic destination for road cyclists. The city’s year-round mild climate and stunning landscapes attract cyclists from around the world. Here are some of the best road bike routes to explore:
+
+<!-- <Image src="/the-average-cyclist/posts/post1/1.JPG" alt="Test" /> -->
+
+<img src="/the-average-cyclist/posts/post1/1.JPG"  />
+
+
+### 1. **Málaga to Rincón de la Victoria (Coastal Route)**
+
+- **Distance:** 30 km (round trip)
+- **Elevation Gain:** Minimal
+- **Difficulty:** Easy
+
+This coastal ride is ideal for those seeking a relaxed but scenic route. Starting in Málaga’s city center, head east along the N-340 road towards the seaside town of Rincón de la Victoria. The ride follows the coastline with breathtaking views of the Mediterranean, passing through picturesque beaches and coastal villages. The route is mostly flat, making it perfect for beginners or a recovery ride.
+
+<br />
+
+### 2. **Málaga to El Torcal de Antequera**
+- **Distance:** 90 km (round trip)
+- **Elevation Gain:** 1,500 meters
+- **Difficulty:** Challenging
+
+This route is a must for cyclists seeking a challenging climb with rewarding views. Starting in Málaga, head north towards the historic town of Antequera before beginning the steep ascent to El Torcal, a natural park known for its unique limestone formations. The climb is tough but steady, with gradients reaching up to 15% in some sections. Once at the top, you’ll be greeted with panoramic views and a surreal landscape.
+<br />
+
+### 3. **Climb to Puerto de la Torre and Almogía**
+- **Distance:** 60 km (round trip)
+- **Elevation Gain:** 1,100 meters
+- **Difficulty:** Moderate
+
+This loop starts from the center of Málaga, taking you west through the suburbs towards Puerto de la Torre and the scenic village of Almogía. The ride involves a gradual but consistent climb, with a mix of rolling hills and a few steeper sections. The roads are quiet and surrounded by beautiful countryside, making this a peaceful yet rewarding ride.
+<br />
+
+### 4. **Málaga to Colmenar and Montes de Málaga Loop**
+- **Distance:** 75 km (loop)
+- **Elevation Gain:** 1,400 meters
+- **Difficulty:** Hard
+
+This route is popular among experienced cyclists. It begins with a climb through the Montes de Málaga Natural Park, where the roads wind through pine forests and offer fantastic views over the city and coast. After a challenging ascent, you’ll reach the village of Colmenar. The return journey includes more rolling terrain and fast descents, making it an exhilarating ride with a good mix of climbing and speed.
+
+### 5. **Málaga to Mijas and Benalmádena**
+- **Distance:** 80 km (loop)
+- **Elevation Gain:** 1,200 meters
+- **Difficulty:** Moderate
+
+This scenic loop takes you west from Málaga along the coastal road before turning inland for a climb up to the whitewashed village of Mijas, perched in the mountains. The ascent to Mijas is steady and offers spectacular views over the Costa del Sol. After reaching the top, enjoy a sweeping descent towards Benalmádena, before following the coast back to Málaga.
+
+### Tips for Road Cyclists in Málaga:
+- **Timing:** Early mornings are best for riding, especially in summer when temperatures rise quickly.
+- **Road Conditions:** Most routes have good-quality tarmac, but be cautious of occasional potholes in mountain areas.
+- **Traffic:** While traffic is light on most rural roads, always stay vigilant, especially on coastal routes with more tourist traffic.
+- **Supplies:** Carry extra water and snacks, especially on longer routes, as shops and cafés may be sparse in rural areas.
+
+These road bike routes showcase the best of Málaga’s diverse landscapes, offering a range of experiences from challenging climbs to relaxing coastal rides. Whether you’re in search of tough ascents or scenic loops, Málaga is a road cycling gem waiting to be explored.
