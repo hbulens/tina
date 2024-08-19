@@ -1,10 +1,9 @@
 ---
 import Container from "@/components/Container.astro";
 import Layout from "../../layouts/Layout.astro";
-import Comments from "@/components/PostComment";
 
 export async function getStaticPaths() {
-  const allPosts: any[] = await Astro.glob("../../content/posts/*.mdx");
+  const allPosts: any[] = await Astro.glob("../../content/posts/*.md");
 
   return allPosts.map((x: any) => {
     const { id, title, publish_date, description, author, image } =

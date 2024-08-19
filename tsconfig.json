@@ -10,6 +10,9 @@
       ],
       "@/assets/*": [
         "src/assets/*"
+      ],
+      "@/layouts/*": [
+        "src/layouts/*"
       ]
     }
   }

@@ -1,7 +1,8 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
 import Topic from "@/components/Topic.astro";
+import { ArrowRightIcon } from "@heroicons/react/24/solid";
 ---
 
 <style>
@@ -42,10 +43,21 @@ import Topic from "@/components/Topic.astro";
               >
                 <div class="flex items-center -mt-1">
                   <h3 class="my-2 text-lg font-bold text-gray-800">
-                    320 sunny days a year
+                    The classic loop: Puerto del Léon
                   </h3>
                 </div>
-                <p class="mb-2 text-gray-600">Lots of good weather.</p>
+                <p class="mb-2 text-gray-600">
+                  A punchy ride with more than 1000m of elevation gain in less
+                  than 50 km.
+                </p>
+                <span class="inline-flex items-baseline">
+                  <ArrowRightIcon className="size-3 mr-1" />
+                  <a href="/the-average-cyclist/destinations/malaga/puertoleon">
+                    <u>
+                      <p class="mb-2 text-gray-600">Check out this ride</p>
+                    </u>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
