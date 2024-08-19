@@ -7,6 +7,6 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
     integrations: [tailwind(), sitemap()],
     site: 'https://hbulens.github.io',
-    base: '/the-average-cyclist',
+    // base: '/the-average-cyclist',
     output: 'static'
 });
