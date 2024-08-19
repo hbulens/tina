@@ -1,12 +1,15 @@
 import 'leaflet/dist/leaflet.css'
-import { MapContainer, Marker, Popup, TileLayer, Polyline } from 'react-leaflet'
+import { MapContainer, TileLayer, Polyline } from 'react-leaflet'
 import gpxParser from 'gpxparser';
 import type { LatLngExpression } from 'leaflet';
 import { useState, useEffect } from 'react';
+import ElevationChart from '@/components/map/elevation';
 
 const RouteVisualizer = () => {
 
     const [coordinates, setCoordinates] = useState<LatLngExpression[]>([]);
+    const [track, setTrack] = useState<any>(null);
+
     const [center, setCenter] = useState<any>(null);
 
     useEffect(() => {
@@ -20,6 +23,7 @@ const RouteVisualizer = () => {
             setCoordinates(positions);
 
             setCenter(positions[0])
+            setTrack(gpx);
         }
 
         getRoute();
@@ -28,17 +32,21 @@ const RouteVisualizer = () => {
     if (!center)
         return <></>;
 
-
     return (
-        <div style={{ height: "500px", width: "100%" }}>
-            <MapContainer style={{ width: "100%", height: "100%" }} center={center} zoom={11} scrollWheelZoom={false}>
-                <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                <Polyline
-                    pathOptions={{ fillColor: 'red', color: 'blue' }}
-                    positions={coordinates}
-                />
-            </MapContainer>
-        </div >
+        <div className="mt-8 mt-8">
+            <div style={{ height: "500px", width: "100%" }}>
+                <MapContainer style={{ width: "100%", height: "100%" }} center={center} zoom={11} scrollWheelZoom={false}>
+                    <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+                    <Polyline
+                        pathOptions={{ fillColor: 'red', color: 'blue' }}
+                        positions={coordinates}
+                    />
+                </MapContainer>
+            </div >
+            <div style={{ height: "350px" }}>
+                <ElevationChart track={track} />
+            </div>
+        </div>
     )
 }
 
