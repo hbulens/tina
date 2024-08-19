@@ -1,28 +1,4 @@
-# The Average Cyclist - Digital Marketing Agency Landing Page
-
-Introducing "The Average Cyclist" - a stunning and versatile Astro theme designed for digital marketing agencies.
-
-Built with clean, modern aesthetics and leveraging the power of Astro and Tailwind, The Average Cyclist empowers you to craft a captivating website that showcases your agency's expertise and fosters trust with potential clients.
-
-[![Static Badge](https://img.shields.io/badge/UI%2FUX-Olga-blue)](https://www.figma.com/@olgaaverchenko) [![View Demo](https://img.shields.io/badge/Develop-Manul_Thanura-red)](https://lk.linkedin.com/in/manulthanura)
-[![Static Badge](https://img.shields.io/badge/View_Demo-green)](https://positivustheme.vercel.app)
-[![Static Badge](https://img.shields.io/badge/Astro-orange)](https://astro.build/)
-
-![Cover](./public/cover.png)
-
-## Theme Features
-
-Leveraging the power of Astro and Tailwind CSS, The Average Cyclist offers:
-
-- Clean and modern design.
-- SEO-friendly.
-- Multiple Layouts.
-- Seamless Navigation.
-- Pre-built Sections.
-- Customizable Components.
-- Mobile-Responsiveness.
-
-## 🚀 Project Structure
+# The Average Cyclist
 
 The project is built using Astro.js and Tailwind CSS. Here's a quick look at the project structure:
 
@@ -38,17 +14,9 @@ All commands are run from the root of the project, from a terminal:
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [Astro documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+| `bun install`             | Installs dependencies                            |
+| `bun dev`                 | Starts local dev server at `localhost:4321`      |
+| `bun run build`           | Build your production site to `./dist/`          |
+| `bun run preview`         | Preview your build locally, before deploying     |
+| `bun run astro ...`       | Run CLI commands like `astro add`, `astro check` |
+| `bun run astro -- --help` | Get help using the Astro CLI                     |
