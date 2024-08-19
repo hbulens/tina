@@ -8,14 +8,12 @@ export async function GET(context) {
         title: 'The Average Cyclist blog',
         description: 'Cycling routes across Spain',
         site: context.site,
-        items: blog.map((post) => ({
+        items: posts.map((post) => ({
             title: post.data.title,
             pubDate: post.data.pubDate,
             description: post.data.description,
             customData: post.data.customData,
-            // Compute RSS link from post `slug`
-            // This example assumes all posts are rendered as `/blog/[slug]` routes
-            link: `/blog/${post.slug}/`,
+            link: `/posts/${post.id}/`,
         })),
         customData: `<language>en-us</language>`,
     });
