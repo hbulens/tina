@@ -4,7 +4,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const ElevationChart = (props: any) => {
     const [data, setData] = useState([]);
 
-    function calculateDistance(lat1, lon1, lat2, lon2) {
+    function calculateDistance(lat1: any, lon1: any, lat2: any, lon2: any) {
         const R = 6371; // Radius of the Earth in kilometers
         const dLat = (lat2 - lat1) * (Math.PI / 180);
         const dLon = (lon2 - lon1) * (Math.PI / 180);
