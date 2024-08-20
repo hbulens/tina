@@ -47,14 +47,13 @@ const ElevationChart = (props: any) => {
     return (
         <div>
             {data.length > 0 && (
-                <ResponsiveContainer width="100%" height={400}>
-                    <LineChart data={data} margin={{ top: 20, right: 30, left: 20, bottom: 5 }}>
+                <ResponsiveContainer width="100%" height={200}>
+                    <LineChart data={data} margin={{ left: 5, right: 5 }}>
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="distance" label={{ value: 'Distance (points)', position: 'insideBottomRight', offset: -10, interval: 5, allowDecimals: false }} />
+                        <XAxis dataKey="distance" label={{ value: 'Distance', position: 'insideBottomRight', offset: -10, interval: 5, allowDecimals: false }} />
                         <YAxis label={{ value: 'Altitude (m)', angle: -90, position: 'insideLeft' }} />
-                        <Tooltip />
-                        <Legend />
-                        <Line type="monotone" dataKey="altitude" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        <Tooltip /> 
+                        <Line type="monotone" dataKey="altitude" stroke="#e86100" activeDot={{ r: 5 }} />
                     </LineChart>
                 </ResponsiveContainer>
             )}

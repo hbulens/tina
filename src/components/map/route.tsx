@@ -5,7 +5,7 @@ import type { LatLngExpression } from 'leaflet';
 import { useState, useEffect } from 'react';
 import ElevationChart from '@/components/map/elevation';
 
-const RouteVisualizer = () => {
+const RouteVisualizer = ({ route }: { route: string }) => {
 
     const [coordinates, setCoordinates] = useState<LatLngExpression[]>([]);
     const [track, setTrack] = useState<any>(null);
@@ -14,7 +14,7 @@ const RouteVisualizer = () => {
 
     useEffect(() => {
         const getRoute = async () => {
-            const response = await fetch("/the-average-cyclist/routes/puertoleon.gpx");
+            const response = await fetch("/the-average-cyclist/routes/" + route + ".gpx");
             const text = await response.text();
             var gpx = new gpxParser();
             gpx.parse(text);
@@ -43,7 +43,7 @@ const RouteVisualizer = () => {
                     />
                 </MapContainer>
             </div >
-            <div style={{ height: "350px" }}>
+            <div style={{ height: "200px" }}>
                 <ElevationChart track={track} />
             </div>
         </div>
