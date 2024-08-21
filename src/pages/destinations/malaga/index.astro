@@ -1,8 +1,7 @@
 ---
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
-import Topic from "@/components/Topic.astro";
-import { ArrowRightIcon } from "@heroicons/react/24/solid";
+import Route from "@/components/route/index.astro";
 ---
 
 <style>
@@ -29,117 +28,113 @@ import { ArrowRightIcon } from "@heroicons/react/24/solid";
     </div>
   </header>
 
-  <main class="space-y-20 mt-8">
+  <main class="space-y-20 mt-8 px-14">
     <Container>
-      <div class="w-full">
+      <div>
+        <div class="mb-12 w-full">
+          <p class="mb-4">
+            Málaga, nestled along Spain’s famous Costa del Sol, is an
+            increasingly popular cycling destination that offers something for
+            everyone—from seasoned riders to beginners looking to explore the
+            region’s diverse terrain. While the city is best known for its
+            challenging mountain routes that attract experienced cyclists, it
+            also offers a variety of gentler paths that cater to different skill
+            levels.
+          </p>
+
+          <p class="mb-4">
+            The area boasts a variety of climbs that cater to different
+            preferences and skill levels. From short, steep ascents to long,
+            steady climbs, Málaga has it all. Natural parks like the Montes de
+            Málaga and the nearby Sierras de Tejeda in Axarquia are home to
+            routes that challenge even the fittest cyclists, with tough
+            gradients and technical descents. Climbs like the Puerto del León,
+            El Torcal and Puerto del Sol offer a mix of difficulty and stunning
+            views, attracting those looking for serious training or adventure.
+          </p>
+
+          <p class="mb-4">
+            Yet Málaga isn’t just for the seasoned cyclist. The city’s flat,
+            coastal promenade offers more relaxed routes perfect for beginners
+            or leisure cyclists wanting to enjoy seaside views. Further inland,
+            rolling hills, olive groves, and quiet country roads offer
+            intermediate riders scenic routes with varying difficulty levels.
+          </p>
+          <p>
+            The infrastructure supports all types of cyclists with good roads,
+            lots of cafes, rental shops and guided tours available throughout
+            the region. Málaga’s climate is ideal for cycling most of the year,
+            although summers can be hot, making the spring and autumn months
+            especially popular, and even the winter months are doable. With its
+            combination of challenging climbs, scenic rides, and rich cultural
+            experiences, Málaga truly offers something for every type of
+            cyclist.
+          </p>
+        </div>
+
+        <h2 class="text-3xl font-medium leading-none mb-8 mt-8">Routes</h2>
+
         <div class="flex flex-col w-full mb-10 sm:flex-row">
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    The classic loop: Puerto del Léon
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  A punchy ride with more than 1000m of elevation gain in less
-                  than 50 km.
-                </p>
-                <span class="inline-flex items-baseline">
-                  <ArrowRightIcon className="size-3 mr-1" />
-                  <a href="/the-average-cyclist/destinations/malaga/puertoleon">
-                    <u>
-                      <p class="mb-2 text-gray-600">Check out this ride</p>
-                    </u>
-                  </a>
-                </span>
-              </div>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2">
-            <div class="relative h-full ml-0 md:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Well-connected airport
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  The international airport is just 10 kilometers from the city
-                  center, and is well connected with the rest of Europe.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Route
+            description="A punchy ride with more than 1000m of elevation gain in less than 50 km."
+            title="The classic loop: Puerto del Léon"
+            id="destinations/malaga/puertoleon"
+          />
+
+          <Route
+            title="Casabarmeja - Colmenar"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
         </div>
         <div class="flex flex-col w-full mb-5 sm:flex-row">
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Great climbs
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">TBD</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Cycling community
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  Málaga is a trending area for cycling. Many cycling clubs and
-                  bike shops organize events for you to join.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2">
-            <div class="relative h-full ml-0 md:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Good roads
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  Some patches of road can be improved on, but in general the
-                  roads are in great condition.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Route
+            title="Almogía - Villanueva - Casabermeja"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
+
+          <Route
+            title="Bacalao"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
+          <Route
+            title="Ruta de la pasa"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
+        </div>
+        <div class="flex flex-col w-full mb-10 sm:flex-row">
+          <Route
+            description="A punchy ride with more than 1000m of elevation gain in less than 50 km."
+            title="The classic loop: Puerto del Léon"
+            id="destinations/malaga/puertoleon"
+          />
+
+          <Route
+            title="Casabarmeja - Colmenar"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
+        </div>
+        <div class="flex flex-col w-full mb-5 sm:flex-row">
+          <Route
+            title="Almogía - Villanueva - Casabermeja"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
+
+          <Route
+            title="Bacalao"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
+          <Route
+            title="Ruta de la pasa"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+          />
         </div>
       </div>
     </Container>
