@@ -34,7 +34,7 @@ const RouteVisualizer = ({ route }: { route: string }) => {
 
     return (
         <div className="mt-8 mt-8">
-            <div style={{ height: "500px", width: "100%" }}>
+            <div style={{ height: "300px", width: "100%" }}>
                 <MapContainer style={{ width: "100%", height: "100%" }} center={center} zoom={11} scrollWheelZoom={false}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Polyline
@@ -43,7 +43,7 @@ const RouteVisualizer = ({ route }: { route: string }) => {
                     />
                 </MapContainer>
             </div >
-            <div style={{ height: "200px" }}>
+            <div style={{ height: "150px" }} className='mt-2'>
                 <ElevationChart track={track} />
             </div>
         </div>

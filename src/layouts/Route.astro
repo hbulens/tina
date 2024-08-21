@@ -1,0 +1,87 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import RouteVisualizer from "@/components/map/route";
+const { frontmatter } = Astro.props;
+
+const coverImage =
+    "/the-average-cyclist/destinations/malaga/" + frontmatter.cover + ".jpg";
+const bgImage = `background-image: url('${coverImage}');height: 60vh`;
+---
+
+<script is:inline>
+
+const goBack = () => {
+    // Get the current URL
+    const currentUrl = window.location.href;
+
+    // Create a URL object to easily manipulate the URL
+    const url = new URL(currentUrl);
+
+    // Get the pathname and split it into segments
+    const segments = url.pathname
+        .split("/")
+        .filter((segment) => segment.length > 0);
+
+    // Remove the last segment
+    segments.pop();
+
+    // Reconstruct the pathname without the last segment
+    const newPathname = "/" + segments.join("/");
+
+    // Update the URL object with the new pathname
+    url.pathname = newPathname;
+
+    // Redirect to the new URL
+    window.location.href = url.toString();
+};
+
+</script>
+
+<Layout title="The Average Cyclist">
+    <header
+        id="header"
+        style={bgImage}
+        class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
+    >
+        <div
+            class="relative flex flex-col items-center md:flex-row"
+            id="services"
+        >
+            <div>
+                <h1 class="text-6xl sm:text-6xl px-1 font-medium bg-white rounded-md">
+                    {frontmatter.title}
+                </h1>
+                <p class="text-lg mt-2 mb-6 font-normal text-center text-white">
+                    {frontmatter.subtitle}
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="space-y-20 mt-8">
+        <Container>
+            <div class="w-full text-lg font-normal pb-8">
+                <h2 class="text-3xl font-medium leading-none">Stats</h2>
+                <ul>
+                    <li>Distance: {frontmatter.stats.distance} km</li>
+                    <li>Elevation: {frontmatter.stats.elevation}m</li>
+                    <li>Max altitude: {frontmatter.stats.maxAltitude}</li>
+                    <li>Difficulty: {frontmatter.stats.difficulty}</li>
+                </ul>
+
+                <div class="mt-4">
+                    <RouteVisualizer
+                        client:only="react"
+                        route={frontmatter.route}
+                    />
+                </div>
+            </div>
+            <slot />
+
+            <div>
+                <button onclick="goBack()" class="mt-8">Go back</button>
+            </div>
+        </Container>
+    </main>
+</Layout>

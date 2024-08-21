@@ -35,7 +35,7 @@ const ElevationChart = (props: any) => {
             }
 
             return {
-                distance: cumulativeDistance.toFixed(2), // Distance in kilometers
+                distance: cumulativeDistance.toFixed(0), // Distance in kilometers
                 altitude: point.ele, // Altitude in meters
             };
         });
@@ -47,13 +47,13 @@ const ElevationChart = (props: any) => {
     return (
         <div>
             {data.length > 0 && (
-                <ResponsiveContainer width="100%" height={200}>
+                <ResponsiveContainer width="100%" height={150}>
                     <LineChart data={data} margin={{ left: 5, right: 5 }}>
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="distance" label={{ value: 'Distance', position: 'insideBottomRight', offset: -10, interval: 5, allowDecimals: false }} />
-                        <YAxis label={{ value: 'Altitude (m)', angle: -90, position: 'insideLeft' }} />
-                        <Tooltip /> 
-                        <Line type="monotone" dataKey="altitude" stroke="#e86100" activeDot={{ r: 5 }} />
+                        <XAxis dataKey="distance" allowDecimals={false} label={{ value: '_', position: 'insideBottomRight', offset: -10 }} interval={100} />
+                        <YAxis label={{ value: '', angle: -90, position: 'insideLeft' }} allowDecimals={false} />
+                        <Tooltip />
+                        <Line type="monotone" dataKey="altitude" stroke="#e86100" activeDot={{ r: 5 }} strokeWidth={0.5} />
                     </LineChart>
                 </ResponsiveContainer>
             )}
