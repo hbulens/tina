@@ -17,7 +17,13 @@ const url = "/the-average-cyclist/" + Astro.props.id;
             <p class="mb-2 text-gray-600">
                 {Astro.props.description}
             </p>
-            <span class="inline-flex items-baseline">
+
+            <div>
+                <span class="px-1 font-medium bg-orange w-12 text-white">📏 {Astro.props.distance} km</span>
+                <span class="px-1 font-medium bg-orange w-12 text-white">🏔️ {Astro.props.elevation}m</span>
+            </div>
+
+            <span class="inline-flex items-baseline mt-2">
                 <ArrowRightIcon className="size-3 mr-1" />
                 <a href={url}>
                     <u>
