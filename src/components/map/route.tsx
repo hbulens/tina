@@ -9,7 +9,6 @@ const RouteVisualizer = ({ route }: { route: string }) => {
 
     const [coordinates, setCoordinates] = useState<LatLngExpression[]>([]);
     const [track, setTrack] = useState<any>(null);
-
     const [center, setCenter] = useState<any>(null);
 
     useEffect(() => {
@@ -27,7 +26,7 @@ const RouteVisualizer = ({ route }: { route: string }) => {
         }
 
         getRoute();
-    });
+    }, []);
 
     if (!center)
         return <></>;

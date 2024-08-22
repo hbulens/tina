@@ -10,32 +10,30 @@ const bgImage = `background-image: url('${coverImage}');height: 60vh`;
 ---
 
 <script is:inline>
+    const goBack = () => {
+        // Get the current URL
+        const currentUrl = window.location.href;
 
-const goBack = () => {
-    // Get the current URL
-    const currentUrl = window.location.href;
+        // Create a URL object to easily manipulate the URL
+        const url = new URL(currentUrl);
 
-    // Create a URL object to easily manipulate the URL
-    const url = new URL(currentUrl);
+        // Get the pathname and split it into segments
+        const segments = url.pathname
+            .split("/")
+            .filter((segment) => segment.length > 0);
 
-    // Get the pathname and split it into segments
-    const segments = url.pathname
-        .split("/")
-        .filter((segment) => segment.length > 0);
+        // Remove the last segment
+        segments.pop();
 
-    // Remove the last segment
-    segments.pop();
+        // Reconstruct the pathname without the last segment
+        const newPathname = "/" + segments.join("/");
 
-    // Reconstruct the pathname without the last segment
-    const newPathname = "/" + segments.join("/");
+        // Update the URL object with the new pathname
+        url.pathname = newPathname;
 
-    // Update the URL object with the new pathname
-    url.pathname = newPathname;
-
-    // Redirect to the new URL
-    window.location.href = url.toString();
-};
-
+        // Redirect to the new URL
+        window.location.href = url.toString();
+    };
 </script>
 
 <Layout title="The Average Cyclist">
@@ -49,7 +47,9 @@ const goBack = () => {
             id="services"
         >
             <div>
-                <h1 class="text-6xl sm:text-6xl px-1 font-medium bg-white rounded-md">
+                <h1
+                    class="text-6xl sm:text-6xl px-1 font-medium bg-white rounded-md"
+                >
                     {frontmatter.title}
                 </h1>
                 <p class="text-lg mt-2 mb-6 font-normal text-center text-white">
@@ -85,3 +85,17 @@ const goBack = () => {
         </Container>
     </main>
 </Layout>
+
+<style is:global>
+    h2 {
+        @apply text-3xl mb-4 mt-4 font-medium leading-none;
+    }
+
+    h3 {
+        @apply text-2xl font-medium mt-4 mb-4;
+    }
+
+    h4 {
+        @apply text-xl font-medium mt-4 mb-4;
+    }
+</style>
