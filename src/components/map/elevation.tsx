@@ -48,7 +48,13 @@ const ElevationChart = (props: any) => {
         <div>
             {data.length > 0 && (
                 <ResponsiveContainer width="100%" height={150}>
-                    <LineChart data={data} margin={{ left: 5, right: 5 }}>
+                    <LineChart data={data} margin={{ left: 5, right: 5 }}
+                        onMouseMove={(e) => {
+                            if (e && e.activeTooltipIndex !== undefined) {
+                                props.onHover(e.activeTooltipIndex); // Send the index to parent state
+                            }
+                        }}
+                        onMouseLeave={() => props.onHover(null)}>
                         <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
                         <XAxis dataKey="distance" allowDecimals={false} label={{ value: '_', position: 'insideBottomRight', offset: -10 }} interval={100} />
                         <YAxis label={{ value: '', angle: -90, position: 'insideLeft' }} allowDecimals={false} />
