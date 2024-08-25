@@ -37,7 +37,7 @@ const RouteVisualizer = ({ route }: { route: string }) => {
                 <MapContainer style={{ width: "100%", height: "100%" }} center={center} zoom={11} scrollWheelZoom={false}>
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                     <Polyline
-                        pathOptions={{ fillColor: 'red', color: 'blue' }}
+                        pathOptions={{ fillColor: 'red', color: '#e86100' }}
                         positions={coordinates}
                     />
                 </MapContainer>

@@ -49,11 +49,11 @@ const ElevationChart = (props: any) => {
             {data.length > 0 && (
                 <ResponsiveContainer width="100%" height={150}>
                     <LineChart data={data} margin={{ left: 5, right: 5 }}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                        <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
                         <XAxis dataKey="distance" allowDecimals={false} label={{ value: '_', position: 'insideBottomRight', offset: -10 }} interval={100} />
                         <YAxis label={{ value: '', angle: -90, position: 'insideLeft' }} allowDecimals={false} />
                         <Tooltip />
-                        <Line type="monotone" dataKey="altitude" stroke="#e86100" activeDot={{ r: 5 }} strokeWidth={0.5} />
+                        <Line type="monotone" dataKey="altitude" stroke="#e86100" dot={false} />
                     </LineChart>
                 </ResponsiveContainer>
             )}

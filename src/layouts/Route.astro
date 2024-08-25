@@ -50,9 +50,7 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
             id="services"
         >
             <div>
-                <h1
-                    class="text-6xl sm:text-6xl px-1 font-medium bg-white rounded-md"
-                >
+                <h1 class="text-6xl sm:text-6xl px-8 font-medium bg-orange rounded-md text-white">
                     {frontmatter.title}
                 </h1>
                 <p class="text-lg mt-2 mb-6 font-normal text-center text-white">
@@ -71,10 +69,10 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
             <div class="w-full text-lg font-normal pb-8">
                 <h2 class="text-3xl font-medium leading-none">Stats</h2>
                 <div>
-                    <span class="px-1 font-medium bg-orange w-12 text-white">📏 {frontmatter.stats.distance} km</span>
-                    <span class="px-1 font-medium bg-orange w-12 text-white">🏔️ {frontmatter.stats.elevation}m</span>
-                    <span class="px-1 font-medium bg-orange w-12 text-white">🎈 {frontmatter.stats.maxAltitude}m</span>
-                    <span class="px-1 font-medium bg-orange w-12 text-white">💦 {frontmatter.stats.difficulty}</span>
+                    <span class="px-1 bg-orange w-12 text-white">📏 {frontmatter.stats.distance} km</span>
+                    <span class="px-1 bg-orange w-12 text-white">🏔️ {frontmatter.stats.elevation}m</span>
+                    <span class="px-1 bg-orange w-12 text-white">🎈 {frontmatter.stats.maxAltitude}m</span>
+                    <span class="px-1 bg-orange w-12 text-white">💦 {frontmatter.stats.difficulty}</span>
                 </div>
 
                 <small>
@@ -86,10 +84,7 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
                 </small>
 
                 <div class="mt-4">
-                    <RouteVisualizer
-                        client:only="react"
-                        route={frontmatter.route}
-                    />
+                    <RouteVisualizer client:only="react" route={frontmatter.route} />
                 </div>
             </div>
             <slot />
