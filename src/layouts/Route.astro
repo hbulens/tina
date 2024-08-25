@@ -7,6 +7,9 @@ const { frontmatter } = Astro.props;
 const coverImage =
     "/the-average-cyclist/destinations/malaga/" + frontmatter.cover + ".jpg";
 const bgImage = `background-image: url('${coverImage}');height: 60vh`;
+
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+
 ---
 
 <script is:inline>
@@ -63,12 +66,12 @@ const bgImage = `background-image: url('${coverImage}');height: 60vh`;
         <Container>
             <div class="w-full text-lg font-normal pb-8">
                 <h2 class="text-3xl font-medium leading-none">Stats</h2>
-                <ul>
-                    <li>Distance: {frontmatter.stats.distance} km</li>
-                    <li>Elevation: {frontmatter.stats.elevation}m</li>
-                    <li>Max altitude: {frontmatter.stats.maxAltitude}</li>
-                    <li>Difficulty: {frontmatter.stats.difficulty}</li>
-                </ul>
+                <div>
+                    <span class="px-1 font-medium bg-orange w-12 text-white">📏 {frontmatter.stats.distance} km</span>
+                    <span class="px-1 font-medium bg-orange w-12 text-white">🏔️ {frontmatter.stats.elevation}m</span>
+                    <span class="px-1 font-medium bg-orange w-12 text-white">🎈 {frontmatter.stats.maxAltitude}m</span>
+                    <span class="px-1 font-medium bg-orange w-12 text-white">💦 {frontmatter.stats.difficulty}</span>
+                </div>
 
                 <div class="mt-4">
                     <RouteVisualizer
@@ -80,7 +83,7 @@ const bgImage = `background-image: url('${coverImage}');height: 60vh`;
             <slot />
 
             <div>
-                <button onclick="goBack()" class="mt-8">Go back</button>
+                <button onclick="goBack()" class="mt-8"><span class="inline-flex items-baseline mt-2"><ArrowLeftIcon className="size-3 mr-2" />  Go back</span></button>
             </div>
         </Container>
     </main>

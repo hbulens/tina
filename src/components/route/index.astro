@@ -6,9 +6,12 @@ const url = "/the-average-cyclist/" + Astro.props.id;
 <div class="w-full sm:w-1/2">
     <div class="relative h-full ml-0 mr-0 sm:mr-10">
         <span class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"></span>
-        <div
-            class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg"
-        >
+        <div class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg">
+            <div>
+                <span class="px-1 font-medium bg-orange w-12 text-white">📏 {Astro.props.distance} km</span>
+                <span class="px-1 font-medium bg-orange w-12 text-white">🏔️ {Astro.props.elevation}m</span>
+            </div>
+
             <div class="flex items-center -mt-1">
                 <h3 class="my-2 text-lg font-bold text-gray-800">
                     {Astro.props.title}
@@ -17,11 +20,6 @@ const url = "/the-average-cyclist/" + Astro.props.id;
             <p class="mb-2 text-gray-600">
                 {Astro.props.description}
             </p>
-
-            <div>
-                <span class="px-1 font-medium bg-orange w-12 text-white">📏 {Astro.props.distance} km</span>
-                <span class="px-1 font-medium bg-orange w-12 text-white">🏔️ {Astro.props.elevation}m</span>
-            </div>
 
             <span class="inline-flex items-baseline mt-2">
                 <ArrowRightIcon className="size-3 mr-1" />
