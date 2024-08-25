@@ -8,7 +8,7 @@ const coverImage =
     "/the-average-cyclist/destinations/malaga/" + frontmatter.cover + ".jpg";
 const bgImage = `background-image: url('${coverImage}');height: 60vh`;
 
-import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
 ---
 
@@ -64,7 +64,6 @@ import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 
     <main class="space-y-20 mt-4">
         <Container>
-
             <div>
                 <button onclick="goBack()"><span class="inline-flex items-baseline"><ArrowLeftIcon className="size-3 mr-2" />  Go back</span></button>
             </div>
@@ -77,6 +76,14 @@ import { ArrowLeftIcon } from "@heroicons/react/24/solid";
                     <span class="px-1 font-medium bg-orange w-12 text-white">🎈 {frontmatter.stats.maxAltitude}m</span>
                     <span class="px-1 font-medium bg-orange w-12 text-white">💦 {frontmatter.stats.difficulty}</span>
                 </div>
+
+                <small>
+                    <a href={"/the-average-cyclist/routes/" + frontmatter.route + ".gpx"}>
+                        <span class="inline-flex items-baseline">
+                            <ArrowDownTrayIcon className="size-3 mr-2" />  Download the route
+                        </span>
+                    </a>
+                </small>
 
                 <div class="mt-4">
                     <RouteVisualizer
