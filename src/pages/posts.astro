@@ -23,7 +23,7 @@ const allPosts = await Astro.glob("../content/posts/*.md");
             allPosts.map(({ frontmatter }) => {
               const {
                 type,
-                publish_date,
+                pubDate,
                 image: { url, alt },
                 author,
                 title,
@@ -46,7 +46,7 @@ const allPosts = await Astro.glob("../content/posts/*.md");
                     {title}
                   </h2>
 
-                  <span class="text-xs ml-1">{publish_date}</span>
+                  <span class="text-xs ml-1">{pubDate}</span>
                   <p class="mb-5 font-light text-gray-500" style="white-space: pre-line">
                     {brief}
                   </p>
