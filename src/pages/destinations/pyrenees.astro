@@ -1,6 +1,7 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
+import Route from "@/components/route/index.astro";
 ---
 
 <style>
@@ -16,12 +17,12 @@ import Container from "@/components/Container.astro";
     class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
   >
     <div class="relative flex flex-col items-center md:flex-row" id="services">
-      <div>
-        <h1 class="text-6xl sm:text-6xl px-1 font-medium bg-white rounded-md">
+      <div class=" bg-orange px-8 ">
+        <h1 class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white">
           Pyrenees
         </h1>
-        <p class="text-lg mt-2 mb-6 font-normal text-center text-white">
-          History is around every bend
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white ">
+          Cycling history is around every bend
         </p>
       </div>
     </div>
@@ -29,106 +30,32 @@ import Container from "@/components/Container.astro";
 
   <main class="space-y-20 mt-8">
     <Container>
-      <div class="w-full">
-        <div class="flex flex-col w-full mb-10 sm:flex-row">
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-indigo-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-indigo-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    320 sunny days a year
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">Lots of good weather.</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2">
-            <div class="relative h-full ml-0 md:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-purple-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-purple-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Well-connected airport
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  The international airport is just 10 kilometers from the city
-                  center, and is well connected with the rest of Europe.
-                </p>
-              </div>
-            </div>
-          </div>
+      <div>
+        <div class="mb-12 w-full">
+          <p class="mb-4">
+            The Pyrenees, stretching along the border between Spain and France, are a dream destination for cyclists seeking breathtaking landscapes and legendary climbs. This majestic mountain range offers some of the most challenging and scenic routes in Europe, with steep ascents, winding descents, and panoramic views at every turn. The Pyrenees are famous for iconic climbs like the Col du Tourmalet and Col d’Aubisque, which have tested the endurance of cyclists in the Tour de France for decades. Beyond the epic climbs, the region is also rich in natural beauty, with lush valleys, crystal-clear lakes, and charming mountain villages. Whether you're a seasoned rider looking for a challenge or someone who simply wants to soak in the stunning scenery, the Pyrenees provide an unforgettable cycling experience.
+            
+            <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Routes</h2>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="A punchy ride through the Montes de Málaga with more than 1000m of elevation gain in less than 50 km."
+            title="Tourmalet"
+            id="destinations/malaga/puertoleon"
+            distance="50"
+            elevation="1050"
+          />
+
+          <Route
+            title="La Cabra"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/malaga/casabermeja"
+            distance="75"
+            elevation="1400"
+          />
         </div>
-        <div class="flex flex-col w-full mb-5 sm:flex-row">
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-blue-400 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-blue-400 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Great climbs
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">TBD</p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full mb-10 sm:mb-0 sm:w-1/2">
-            <div class="relative h-full ml-0 mr-0 sm:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-yellow-400 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-yellow-400 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Cycling community
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  Málaga is a trending area for cycling. Many cycling clubs and
-                  bike shops organize events for you to join.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="w-full sm:w-1/2">
-            <div class="relative h-full ml-0 md:mr-10">
-              <span
-                class="absolute top-0 left-0 w-full h-full mt-1 ml-1 bg-green-500 rounded-lg"
-              ></span>
-              <div
-                class="relative h-full p-5 bg-white border-2 border-green-500 rounded-lg"
-              >
-                <div class="flex items-center -mt-1">
-                  <h3 class="my-2 text-lg font-bold text-gray-800">
-                    Good roads
-                  </h3>
-                </div>
-                <p class="mb-2 text-gray-600">
-                  Some patches of road can be improved on, but in general the
-                  roads are in great condition.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+        
+  
     </Container>
   </main>
 </Layout>

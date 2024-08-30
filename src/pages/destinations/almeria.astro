@@ -1,5 +1,5 @@
 ---
-import Layout from "../../layouts/Layout.astro";
+import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
 import Route from "@/components/route/index.astro";
 ---
@@ -17,109 +17,61 @@ import Route from "@/components/route/index.astro";
     class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
   >
     <div class="relative flex flex-col items-center md:flex-row" id="services">
-      <div>
-        <h1 class="text-6xl sm:text-6xl px-1 font-medium bg-white rounded-md">
+      <div class=" bg-orange px-8 ">
+        <h1 class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white">
           Almería
         </h1>
-        <p class="text-lg mt-2 mb-6 font-normal text-center text-white">
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white ">
           Almería has been flying under the radar but has some unbelieve rides
-          in store.
+          in store.       
         </p>
       </div>
     </div>
   </header>
 
-  <main class="space-y-20 mt-8 px-14">
+  <main class="space-y-20 mt-8">
     <Container>
       <div>
         <div class="mb-12 w-full">
           <p class="mb-4">
-            Málaga, nestled along Spain’s famous Costa del Sol, is an
-            increasingly popular cycling destination that offers something for
-            everyone—from seasoned riders to beginners looking to explore the
-            region’s diverse terrain. While the city is best known for its
-            challenging mountain routes that attract experienced cyclists, it
-            also offers a variety of gentler paths that cater to different skill
-            levels.
-          </p>
+            Almería, located in the southeastern corner of Spain, is a hidden gem for cyclists seeking diverse and unspoiled landscapes. 
+            Known for its year-round sunshine and stunning natural beauty, Almería offers a unique mix of coastal routes, desert trails, and mountainous climbs. 
+            The region's dramatic scenery includes the otherworldly Tabernas Desert, Europe's only true desert, as well as the rugged coastline of Cabo de Gata-Níjar Natural Park. Whether you're a road cyclist or a mountain biking enthusiast, Almería provides a tranquil yet challenging environment that is perfect for an unforgettable cycling adventure.   </p>
 
-          <p class="mb-4">
-            The area boasts a variety of climbs that cater to different
-            preferences and skill levels. From short, steep ascents to long,
-            steady climbs, Málaga has it all. Natural parks like the Montes de
-            Málaga and the nearby Sierras de Tejeda in Axarquia are home to
-            routes that challenge even the fittest cyclists, with tough
-            gradients and technical descents. Climbs like the Puerto del León,
-            El Torcal and Puerto del Sol offer a mix of difficulty and stunning
-            views, attracting those looking for serious training or adventure.
-          </p>
-
-          <p class="mb-4">
-            Yet Málaga isn’t just for the seasoned cyclist. The city’s flat,
-            coastal promenade offers more relaxed routes perfect for beginners
-            or leisure cyclists wanting to enjoy seaside views. Further inland,
-            rolling hills, olive groves, and quiet country roads offer
-            intermediate riders scenic routes with varying difficulty levels.
-          </p>
-          <p>
-            The infrastructure supports all types of cyclists with good roads,
-            lots of cafes, rental shops and guided tours available throughout
-            the region. Málaga’s climate is ideal for cycling most of the year,
-            although summers can be hot, making the spring and autumn months
-            especially popular, and even the winter months are doable. With its
-            combination of challenging climbs, scenic rides, and rich cultural
-            experiences, Málaga truly offers something for every type of
-            cyclist.
-          </p>
         </div>
 
-        <h2 class="text-3xl font-medium leading-none mb-8 mt-8">Routes</h2>
+        <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Routes</h2>
 
-        <div class="flex flex-col w-full mb-10 sm:flex-row">
+        <div class="flex flex-col w-full mb-5 md:flex-row">
           <Route
-            description="A punchy ride with more than 1000m of elevation gain in less than 50 km."
-            title="The classic loop: Puerto del Léon"
+            description="A punchy ride through the Montes de Málaga with more than 1000m of elevation gain in less than 50 km."
+            title="Alto de Velefique"
             id="destinations/malaga/puertoleon"
+            distance="50"
+            elevation="1050"
           />
 
           <Route
-            title="Casabarmeja - Colmenar"
+            title="Calar Alto"
             description="The road of the 1000 turns to Casabermeja is the perfect training climb."
             id="destinations/malaga/casabermeja"
+            distance="75"
+            elevation="1400"
           />
         </div>
-        <div class="flex flex-col w-full mb-5 sm:flex-row">
-          <Route
-            title="Almogía - Villanueva - Casabermeja"
-            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
-            id="destinations/malaga/casabermeja"
-          />
 
-          <Route
-            title="Bacalao"
-            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
-            id="destinations/malaga/casabermeja"
-          />
-          <Route
-            title="Ruta de la pasa"
-            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
-            id="destinations/malaga/casabermeja"
-          />
-        </div>
-        <div class="flex flex-col w-full mb-10 sm:flex-row">
-          <Route
-            description="A punchy ride with more than 1000m of elevation gain in less than 50 km."
-            title="The classic loop: Puerto del Léon"
-            id="destinations/malaga/puertoleon"
-          />
 
+        <div class="flex flex-col w-full mb-5 md:flex-row">
           <Route
-            title="Casabarmeja - Colmenar"
-            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
-            id="destinations/malaga/casabermeja"
+            title="Mare de Déu del Mont"
+            description="A wonderful loop of the Embalse de Casasola."
+            id="destinations/malaga/almogia"
+            distance="83"
+            elevation="1200"
           />
         </div>
-      </div>
+        
+  
     </Container>
   </main>
 </Layout>
