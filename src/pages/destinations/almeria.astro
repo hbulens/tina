@@ -2,6 +2,8 @@
 import Layout from "@/layouts/Layout.astro";
 import Container from "@/components/Container.astro";
 import Route from "@/components/route/index.astro";
+
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
 ---
 
 <style>
@@ -32,6 +34,7 @@ import Route from "@/components/route/index.astro";
   <main class="space-y-20 mt-8">
     <Container>
       <div>
+
         <div class="mb-12 w-full">
           <p class="mb-4">
             Almería, located in the southeastern corner of Spain, is a hidden gem for cyclists seeking diverse and unspoiled landscapes. 
@@ -72,6 +75,8 @@ import Route from "@/components/route/index.astro";
         </div>
         
   
+      <a href="/the-average-cyclist/destinations"><span class="inline-flex items-baseline mt-4 mb-2"><ArrowLeftIcon className="size-3 mr-2" /> Back to destinations</span></a>
+
     </Container>
   </main>
 </Layout>
