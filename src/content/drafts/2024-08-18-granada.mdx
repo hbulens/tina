@@ -15,7 +15,7 @@ Málaga, with its mix of coastal roads, mountain climbs, and smooth tarmac, is a
 The city’s year-round pleasant climate (apart from July and August, when it can be scorching hot) and stunning landscapes attract cyclists from around the world.
 
 <center class="mt-8 mb-8">
-<Image src="/the-average-cyclist/posts/post1/2.jpg" alt="Malaga" width="700" height="500" decoding="async" loading="lazy"  class="rounded-[10px] shadow-card border border-black justify-between items-center flex text-white" />
+<Image src="/posts/post1/2.jpg" alt="Malaga" width="700" height="500" decoding="async" loading="lazy"  class="rounded-[10px] shadow-card border border-black justify-between items-center flex text-white" />
 <small>The Puerto del Sol is looming.</small>
 </center>
 

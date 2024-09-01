@@ -5,7 +5,7 @@ import RouteVisualizer from "@/components/map/route";
 const { frontmatter } = Astro.props;
 
 const coverImage =
-    "/the-average-cyclist/destinations/malaga/" + frontmatter.cover + ".jpg";
+    "/destinations/malaga/" + frontmatter.cover + ".jpg";
 const bgImage = `background-image: url('${coverImage}');height: 60vh`;
 
 import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
@@ -76,7 +76,7 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
                 </div>
 
                 <small>
-                    <a href={"/the-average-cyclist/routes/" + frontmatter.route + ".gpx"}>
+                    <a href={"/routes/" + frontmatter.route + ".gpx"}>
                         <span class="inline-flex items-baseline">
                             <ArrowDownTrayIcon className="size-3 mr-2" />  Download the route
                         </span>

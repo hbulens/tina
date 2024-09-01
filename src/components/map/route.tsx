@@ -17,7 +17,7 @@ const RouteVisualizer = ({ route }: { route: string }) => {
 
     useEffect(() => {
         const getRoute = async () => {
-            const response = await fetch("/the-average-cyclist/routes/" + route + ".gpx");
+            const response = await fetch("/routes/" + route + ".gpx");
             const text = await response.text();
             var gpx = new gpxParser();
             gpx.parse(text);

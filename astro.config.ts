@@ -8,8 +8,7 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), sitemap(), react(), mdx()],
-  site: "https://hbulens.github.io",
-  base: "/the-average-cyclist",
+  site: "https://theaveragecyclist.com/",
   output: "static",
   vite: {
     assetsInclude: ['**/*.gpx']
