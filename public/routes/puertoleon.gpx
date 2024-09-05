@@ -5,14 +5,14 @@
   xmlns="http://www.topografix.com/GPX/1/1"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns2="http://www.garmin.com/xmlschemas/GpxExtensions/v3">
   <metadata>
-    <name>Málaga - Puerto del Léon - Málaga</name>
+    <name>Málaga - Puerto del León - Málaga</name>
     <link href="connect.garmin.com">
       <text>Garmin Connect</text>
     </link>
     <time>2023-04-12T08:19:26.000Z</time>
   </metadata>
   <trk>
-    <name>Málaga - Puerto del Léon - Málaga</name>
+    <name>Málaga - Puerto del León - Málaga</name>
     <trkseg>
       <trkpt lat="36.72182564623654" lon="-4.425263749435544">
         <ele>15.01</ele>
