@@ -1,4 +1,5 @@
 ---
+import { FaInstagram } from "react-icons/fa";
 import Container from "./Container.astro";
 const year = new Date().getFullYear();
 ---
@@ -16,9 +17,21 @@ const year = new Date().getFullYear();
     <div class="py-6">
       <div class="flex flex-col items-center justify-between md:flex-row">
         <div class="flex items-center space-x-3 rtl:space-x-reverse">
-          <img class="w-auto" src="/logo.png" alt="Logo" />
+          <img class="w-auto" src="/logo.png" alt="Logo" style="max-height: 250px;" />
         </div>
       </div>
+    </div>
+    <div class="py-4">
+      <center>
+        <a
+          href="https://www.instagram.com/itstheaveragecyclist/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-black hover:text-gray-700"
+        >
+          <FaInstagram size={"2em"}  />
+        </a>
+      </center>
     </div>
     <div class="py-4">
       <center>
