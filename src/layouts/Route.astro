@@ -5,7 +5,7 @@ import RouteVisualizer from "@/components/map/route";
 const { frontmatter } = Astro.props;
 
 const coverImage =
-    "/destinations/malaga/" + frontmatter.cover + ".jpg";
+    "/destinations/" + frontmatter.cover + ".jpg";
 const bgImage = `background-image: url('${coverImage}');height: 60vh`;
 
 import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
