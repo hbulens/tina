@@ -1,5 +1,3 @@
-import rss from '@astrojs/rss';
-import { getCollection } from 'astro:content';
 import rss, { pagesGlobToRssItems } from '@astrojs/rss';
 
 export async function GET(context) {
