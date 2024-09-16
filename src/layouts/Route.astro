@@ -4,12 +4,25 @@ import Container from "@/components/Container.astro";
 import RouteVisualizer from "@/components/map/route";
 const { frontmatter } = Astro.props;
 
-const coverImage =
-    "/destinations/" + frontmatter.cover + ".jpg";
+const coverImage = "/destinations/" + frontmatter.cover + ".jpg";
 const bgImage = `background-image: url('${coverImage}');height: 60vh`;
 
 import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
+const rateDifficulty = () => {
+    switch (frontmatter.stats.difficulty) {
+        case "easy":
+            return "⭐ ";
+        case "moderate":
+            return "⭐⭐ ";
+        case "challenging":
+            return "⭐⭐⭐ ";
+        case "hard":
+            return "⭐⭐⭐⭐ ";
+        case "very hard":
+            return "⭐⭐⭐⭐⭐ ";
+    }
+};
 ---
 
 <script is:inline>
@@ -50,7 +63,9 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
             id="services"
         >
             <div>
-                <h1 class="text-6xl sm:text-6xl px-8 font-medium bg-orange rounded-md text-white">
+                <h1
+                    class="text-6xl sm:text-6xl px-8 font-medium bg-orange rounded-md text-white"
+                >
                     {frontmatter.title}
                 </h1>
                 <p class="text-lg mt-2 mb-6 font-normal text-center text-white">
@@ -63,38 +78,55 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
     <main class="space-y-20 mt-4">
         <Container>
             <div>
-                <button onclick="goBack()"><span class="inline-flex items-baseline"><ArrowLeftIcon className="size-3 mr-2" />  Go back</span></button>
+                <button onclick="goBack()"><span class="inline-flex items-baseline">
+                    <ArrowLeftIcon className="size-3 mr-2" /> Go back</span>
+                </button>
             </div>
 
             <div class="w-full text-lg font-normal pb-8">
                 <h2 class="text-3xl font-medium leading-none">Stats</h2>
                 <div>
-                    <span class="px-1 bg-orange w-12 text-white">📏 {frontmatter.stats.distance} km</span>
+                    <span class="px-1 bg-orange w-12 text-white">🏁 {frontmatter.stats.distance} km</span>
                     <span class="px-1 bg-orange w-12 text-white">🏔️ {frontmatter.stats.elevation}m</span>
-                    <span class="px-1 bg-orange w-12 text-white">🎈 {frontmatter.stats.maxAltitude}m</span>
-                    <span class="px-1 bg-orange w-12 text-white">💦 {frontmatter.stats.difficulty}</span>
+                    <span class="px-1 bg-orange w-12 text-white">🛫 {frontmatter.stats.maxAltitude}m</span>
+                    <span class="px-1 bg-orange w-12 text-white">{rateDifficulty()}</span>
                 </div>
 
                 <small>
                     <a href={"/routes/" + frontmatter.route + ".gpx"}>
                         <span class="inline-flex items-baseline">
-                            <ArrowDownTrayIcon className="size-3 mr-2" />  Download the route
+                            <ArrowDownTrayIcon className="size-3 mr-2" /> Download the route
                         </span>
                     </a>
                 </small>
 
                 <div class="mt-4">
-                    <RouteVisualizer client:only="react" route={frontmatter.route} />
+                    <RouteVisualizer
+                        client:only="react"
+                        route={frontmatter.route}
+                    />
                 </div>
             </div>
             <slot />
 
+            <div>
+                <button onclick="goBack()" class="mt-8">
+                    <span class="inline-flex items-baseline mt-2">
+                        <ArrowLeftIcon className="size-3 mr-2" /> Go back
+                    </span>
+                </button>
+            </div>
+
             <div class="mt-8">
                 <div id="disqus_thread"></div>
             </div>
-            
+
             <div>
-                <button onclick="goBack()" class="mt-8"><span class="inline-flex items-baseline mt-2"><ArrowLeftIcon className="size-3 mr-2" />  Go back</span></button>
+                <button onclick="goBack()" class="mt-8">
+                    <span class="inline-flex items-baseline mt-2">
+                        <ArrowLeftIcon className="size-3 mr-2" /> Go back
+                    </span>
+                </button>
             </div>
         </Container>
     </main>
@@ -113,24 +145,22 @@ import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
         @apply text-xl font-medium mt-4 mb-4;
     }
 
-
     a {
-        @apply underline text-main-100
+        @apply underline text-main-100;
     }
 </style>
 
-
 <script is:inline>
     document.addEventListener("astro:page-load", () => {
-      function disqus_config() {
-        this.page.url = currentPath;
-        this.page.identifier = id;
-      }
-  
-      const d = document,
-        s = d.createElement("script");
-      s.src = "https://the-average-cyclist.disqus.com/embed.js";
-      s.setAttribute("data-timestamp", (+new Date()).toString());
-      (d.head || d.body).appendChild(s);
+        function disqus_config() {
+            this.page.url = currentPath;
+            this.page.identifier = id;
+        }
+
+        const d = document,
+            s = d.createElement("script");
+        s.src = "https://the-average-cyclist.disqus.com/embed.js";
+        s.setAttribute("data-timestamp", (+new Date()).toString());
+        (d.head || d.body).appendChild(s);
     });
-  </script>
+</script>
