@@ -44,6 +44,8 @@ const ElevationChart = (props: any) => {
 
     }, [])
 
+    const distance = data.length > 0 ? (data.slice(-1)[0] as any).distance : 0;
+
     return (
         <div>
             {data.length > 0 && (
@@ -56,7 +58,12 @@ const ElevationChart = (props: any) => {
                         }}
                         onMouseLeave={() => props.onHover(null)}>
                         <CartesianGrid stroke="#eee" strokeDasharray="5 5" />
-                        <XAxis dataKey="distance" allowDecimals={false} label={{ value: '_', position: 'insideBottomRight', offset: -10 }} interval={100} />
+                        <XAxis
+                            dataKey="distance"
+                            allowDecimals={false}
+                            label={{ value: '_', position: 'insideBottomRight', offset: -10 }}
+                            interval={distance > 70 ? 500 : 100}
+                        />
                         <YAxis label={{ value: '', angle: -90, position: 'insideLeft' }} allowDecimals={false} />
                         <Tooltip />
                         <Line type="monotone" dataKey="altitude" stroke="#e86100" dot={false} />
