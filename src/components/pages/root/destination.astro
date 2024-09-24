@@ -11,7 +11,7 @@ const { destinations, title } = Astro.props;
 
     <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
         
-        {destinations.map(({ background, name1, name2, arrow, link, image}): any => {
+        {destinations.map(({ background, name1, name2, arrow, link, image}: any): any => {
             const bgImage = `background-image: url('${image}');`;
 
             return (
