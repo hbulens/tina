@@ -1,0 +1,20 @@
+[
+  {
+    "id": 6,
+    "name1": "Pyrenees",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/destinations/aw.svg",
+    "link": "/destinations/pyrenees",
+    "image": "/destinations/pyrenees.jpg"
+  },
+  {
+    "id": 8,
+    "name1": "Alps",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/destinations/aw.svg",
+    "link": "/destinations/almeria",
+    "image": "/destinations/velefique.jpg"
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name1": "Ronde van Vlaanderen",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white ",
+    "arrow": "/destinations/ag.svg",
+    "link": "/destinations/malaga",
+    "image": "/destinations/malaga.jpg"
+  },
+  {
+    "id": 2,
+    "name1": "Gent - Brugge",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/destinations/ag.svg",
+    "link": "/destinations/calp",
+    "image": "/destinations/calp.jpg"
+  },
+  {
+    "id": 2,
+    "name1": "La Doyenne",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/destinations/ag.svg",
+    "link": "/destinations/calp",
+    "image": "/destinations/calp.jpg"
+  }
+]
