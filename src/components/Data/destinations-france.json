@@ -5,7 +5,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/aw.svg",
-    "link": "/destinations/pyrenees",
+    "link": "/destinations/france/pyrenees",
     "image": "/destinations/pyrenees.jpg"
   },
   {
@@ -14,7 +14,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/aw.svg",
-    "link": "/destinations/almeria",
+    "link": "/destinations/france/alps",
     "image": "/destinations/velefique.jpg"
   }
 ]

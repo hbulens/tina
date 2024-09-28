@@ -1,0 +1,63 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import Route from "@/components/route/index.astro";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+---
+
+<style>
+  #header {
+    background-image: url("/destinations/madrid.jpg");
+    height: 60vh;
+  }
+</style>
+
+<Layout title="The Average Cyclist">
+  <header
+    id="header"
+    class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
+  >
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
+      <div class=" bg-orange px-8 ">
+        <h1 class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white">
+          Madrid
+        </h1>
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white ">
+          An under-appreciated cycling area that will surprise you.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="space-y-20 mt-8">
+    <Container>
+      <div>
+        <div class="mb-12 w-full">
+          <p class="mb-4">
+            The Madrid area, while known for its vibrant city life, is also a fantastic destination for cyclists seeking diverse routes and scenic rides. Just beyond the bustling capital, you'll find a variety of landscapes ranging from rolling hills and peaceful countryside to challenging mountain climbs in the Sierra de Guadarrama. This region offers a perfect mix of leisurely rides through historic villages and more intense routes that attract cyclists looking to conquer iconic ascents like Puerto de Navacerrada. With its year-round rideable weather and a rich blend of cultural and natural beauty, the Madrid area is an excellent choice for cyclists of all levels.
+        <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Routes</h2>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="A punchy ride through the Montes de Málaga with more than 1000m of elevation gain in less than 50 km."
+            title="La Morcuera"
+            id="destinations/spain/madrid/morcuera"
+            distance="50"
+            elevation="1050"
+          />
+
+          <Route
+            title="Puerto de la Cubilla"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/spain/malaga/casabermeja"
+            distance="75"
+            elevation="1400"
+          />
+        </div>
+        
+    
+        <a href="/destinations"><span class="inline-flex items-baseline mt-4 mb-2"><ArrowLeftIcon className="size-3 mr-2" /> Back to destinations</span></a>
+
+    </Container>
+  </main>
+</Layout>

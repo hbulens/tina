@@ -5,7 +5,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white ",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/malaga",
+    "link": "/destinations/spain/malaga",
     "image": "/destinations/malaga.jpg"
   },
   {
@@ -14,7 +14,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/calp",
+    "link": "/destinations/spain/calp",
     "image": "/destinations/calp.jpg"
   },
   {
@@ -23,7 +23,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/calp",
+    "link": "/destinations/spain/calp",
     "image": "/destinations/calp.jpg"
   }
 ]

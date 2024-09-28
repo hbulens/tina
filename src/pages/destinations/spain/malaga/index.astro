@@ -1,0 +1,211 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import Route from "@/components/route/index.astro";
+
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+---
+
+<style>
+  #header {
+    background-image: url("/pages/root/5.jpg");
+    height: 60vh;
+  }
+</style>
+
+<Layout title="The Average Cyclist">
+  <header
+    id="header"
+    class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
+  >
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
+      <div class="bg-orange px-8">
+        <h1
+          class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white"
+        >
+          Málaga
+        </h1>
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white">
+          The capital of the Costa del Sol is the gateway for a number of
+          fabulous climbs.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="space-y-20 mt-4">
+    <Container>
+      <div>
+        <div class="mb-12 mt-4 w-full">
+          <p class="mb-4">
+            Málaga, nestled along Spain’s famous Costa del Sol, is an
+            increasingly popular cycling destination that offers something for
+            everyone—from seasoned riders to beginners looking to explore the
+            region’s diverse terrain. While the city is best known for its
+            challenging mountain routes that attract experienced cyclists, it
+            also offers a variety of gentler paths that cater to different skill
+            levels.
+          </p>
+
+          <p class="mb-4">
+            The area boasts a variety of climbs that cater to different
+            preferences and skill levels. From short, steep ascents to long,
+            steady climbs, Málaga has it all. Natural parks like the Montes de
+            Málaga and the nearby Sierras de Tejeda in Axarquia are home to
+            routes that challenge even the fittest cyclists, with tough
+            gradients and technical descents. Climbs like the Puerto del León,
+            El Torcal and Puerto del Sol offer a mix of difficulty and stunning
+            views, attracting those looking for serious training or adventure.
+          </p>
+
+          <p class="mb-4">
+            Yet Málaga isn’t just for the seasoned cyclist. The city’s flat,
+            coastal promenade offers more relaxed routes perfect for beginners
+            or leisure cyclists wanting to enjoy seaside views. Further inland,
+            rolling hills, olive groves, and quiet country roads offer
+            intermediate riders scenic routes with varying difficulty levels.
+          </p>
+          <p>
+            The infrastructure supports all types of cyclists with good roads,
+            lots of cafes, rental shops and guided tours available throughout
+            the region. Málaga’s climate is ideal for cycling most of the year,
+            although summers can be hot, making the spring and autumn months
+            especially popular, and even the winter months are doable. With its
+            combination of challenging climbs, scenic rides, and rich cultural
+            experiences, Málaga truly offers something for every type of
+            cyclist.
+          </p>
+        </div>
+
+        <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Routes</h2>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="A punchy ride through the Montes de Málaga with more than 1000m of elevation gain in less than 50 km."
+            title="The classic loop: Puerto del León"
+            id="destinations/spain/malaga/puertoleon"
+            distance="50"
+            elevation="1050"
+          />
+
+          <Route
+            title="Casabarmeja - Colmenar"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/spain/malaga/casabermeja"
+            distance="75"
+            elevation="1400"
+          />
+        </div>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="Almogía - Villanueva"
+            description="A wonderful loop of the Embalse de Casasola."
+            id="destinations/spain/malaga/almogia"
+            distance="83"
+            elevation="1200"
+          />
+
+          <Route
+            title="Bacalao"
+            description="One of the easiest loops around in the around with a gentle climb in the middle of the course."
+            id="destinations/spain/malaga/bacalao"
+            distance="70"
+            elevation="700"
+          />
+          <Route
+            title="Ruta de la pasa"
+            description="Ride a part of the route of the raisins, one of the primary agricultural products of the area."
+            id="destinations/spain/malaga/rutadelapasa"
+            distance="80"
+            elevation="900"
+          />
+        </div>
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="The popular El Torcal park, famous for its pancake-shaped rocks, is also home to some proper climbing, from whatever direction you're approaching it."
+            title="El Torcal"
+            id="destinations/spain/malaga/torcal"
+            distance="150"
+            elevation="2000"
+          />
+
+          <Route
+          description="One of the alternative routes to go around El Torcal park. This course passes through the village of La Joya, 'The Jewel'."
+          title="El Torcal (via La Joya)"
+            id="destinations/spain/malaga/torcal-via-la-joya"
+            distance="120"
+            elevation="2100"
+          />
+        </div>
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="Puerto del Sol"
+            description="One of the most beautiful and quiet climbs in all of Andalucía."
+            id="destinations/spain/malaga/puertodelsol"
+            distance="120"
+            elevation="2400"
+          />
+
+          <Route
+            title="Down the Axarquia valley"
+            description="Up the Puerto del León, down the Axarquia valley and back via the coastal road."
+            id="destinations/spain/malaga/axarquia-valley"
+            distance="110"
+            elevation="1800"
+          />
+
+          <Route
+            title="The coastal road"
+            description="The only flat road you'll find this area. And yet, despite being flat, you somehow accumulate 250m of elevation."
+            id="destinations/spain/malaga/coast"
+            distance="60"
+            elevation="250"
+          />
+        </div>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="Boquete de Zafarraya"
+            description="The dramatic entrance to the Málaga province from Granada."
+            id="destinations/spain/malaga/zafarraya"
+            distance="140"
+            elevation="1900"
+          />
+
+          <Route
+            title="The route of the (lesser known) Villanuevas"
+            description="Crossing the Montes de Málaga, you enter a new world with villages like Villanueva de Cauche, del Rosario, and del Trabuco."
+            id="destinations/spain/malaga/villanuevas"
+            distance="130"
+            elevation="2200"
+          />
+        </div>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="The climb to Cútar, a hidden gem"
+            description="Tucked away in a little corner of the hills is the sleepy village of Cútar, which happens to have a road that is the perfect training climb."
+            id="destinations/spain/malaga/cutar"
+            distance="114"
+            elevation="1800"
+          />
+
+          <Route
+            title="Comares"
+            description="The balcony of Axarquia towers over the area. When you an eagle's nest like yet, you know what that means: climbing!"
+            id="destinations/spain/malaga/comares"
+            distance="95"
+            elevation="1700"
+          />
+        </div>
+      </div>
+
+      <a href="/destinations"
+        ><span class="inline-flex items-baseline mt-4 mb-2"
+          ><ArrowLeftIcon className="size-3 mr-2" /> Back to destinations</span
+        ></a
+      >
+    </Container>
+  </main>
+</Layout>

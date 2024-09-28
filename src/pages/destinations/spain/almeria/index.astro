@@ -1,0 +1,82 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import Route from "@/components/route/index.astro";
+
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+---
+
+<style>
+  #header {
+    background-image: url("/destinations/velefique.jpg");
+    height: 60vh;
+  }
+</style>
+
+<Layout title="The Average Cyclist">
+  <header
+    id="header"
+    class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
+  >
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
+      <div class=" bg-orange px-8 ">
+        <h1 class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white">
+          Almería
+        </h1>
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white ">
+          Almería has been flying under the radar but has some unbelieve rides
+          in store.       
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="space-y-20 mt-8">
+    <Container>
+      <div>
+
+        <div class="mb-12 w-full">
+          <p class="mb-4">
+            Almería, located in the southeastern corner of Spain, is a hidden gem for cyclists seeking diverse and unspoiled landscapes. 
+            Known for its year-round sunshine and stunning natural beauty, Almería offers a unique mix of coastal routes, desert trails, and mountainous climbs. 
+            The region's dramatic scenery includes the otherworldly Tabernas Desert, Europe's only true desert, as well as the rugged coastline of Cabo de Gata-Níjar Natural Park. Whether you're a road cyclist or a mountain biking enthusiast, Almería provides a tranquil yet challenging environment that is perfect for an unforgettable cycling adventure.   </p>
+
+        </div>
+
+        <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Routes</h2>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="A punchy ride through the Montes de Málaga with more than 1000m of elevation gain in less than 50 km."
+            title="Alto de Velefique"
+            id="destinations/spain/almeria/velefique"
+            distance="50"
+            elevation="1050"
+          />
+
+          <Route
+            title="Calar Alto"
+            description="The road of the 1000 turns to Casabermeja is the perfect training climb."
+            id="destinations/spain/almeria/calaralto"
+            distance="75"
+            elevation="1400"
+          />
+        </div>
+
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="Mojacar"
+            description="A wonderful loop of the Embalse de Casasola."
+            id="destinations/spain/almeria/mojacar"
+            distance="83"
+            elevation="1200"
+          />
+        </div>
+        
+  
+      <a href="/destinations"><span class="inline-flex items-baseline mt-4 mb-2"><ArrowLeftIcon className="size-3 mr-2" /> Back to destinations</span></a>
+
+    </Container>
+  </main>
+</Layout>

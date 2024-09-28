@@ -5,7 +5,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white ",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/malaga",
+    "link": "/destinations/spain/malaga",
     "image": "/destinations/malaga.jpg"
   },
   {
@@ -14,7 +14,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/calp",
+    "link": "/destinations/spain/calp",
     "image": "/destinations/calp.jpg"
   },
   {
@@ -23,7 +23,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/aw.svg",
-    "link": "/destinations/granada",
+    "link": "/destinations/spain/granada",
     "image": "/destinations/granada.jpg"
   },
   {
@@ -32,7 +32,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-zinc-100 rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/asturias",
+    "link": "/destinations/spain/asturias",
     "image": "/destinations/asturias.jpg"
   },
   {
@@ -41,7 +41,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-orange rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/ag.svg",
-    "link": "/destinations/madrid",
+    "link": "/destinations/spain/madrid",
     "image": "/destinations/madrid.jpg"
   },
   {
@@ -50,7 +50,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/aw.svg",
-    "link": "/destinations/girona",
+    "link": "/destinations/spain/girona",
     "image": "/destinations/girona.jpg"
   },
   {
@@ -59,7 +59,7 @@
     "name2": "",
     "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
     "arrow": "/destinations/aw.svg",
-    "link": "/destinations/almeria",
+    "link": "/destinations/spain/almeria",
     "image": "/destinations/velefique.jpg"
   }
 ]

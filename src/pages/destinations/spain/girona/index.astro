@@ -1,0 +1,109 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import Route from "@/components/route/index.astro";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+---
+
+<style>
+  #header {
+    background-image: url("/destinations/girona.jpg");
+    height: 60vh;
+  }
+</style>
+
+<Layout title="The Average Cyclist">
+  <header
+    id="header"
+    class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
+  >
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
+      <div class=" bg-orange px-8 ">
+        <h1 class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white">
+          Girona
+        </h1>
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white ">
+          The epicenter of cycling in Europe.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="space-y-20 mt-8">
+    <Container>
+      <div>
+        <div class="mb-12 w-full">
+          <p class="mb-4">
+            Girona, nestled in the heart of Catalonia, Spain, is a premier destination for cycling enthusiasts. 
+            With its mild climate, diverse terrain, and picturesque landscapes, Girona offers something for every cyclist, from rolling hills and challenging climbs to serene coastal routes. 
+            The city itself is steeped in history, with its medieval architecture, winding streets, and vibrant culture providing a perfect backdrop for post-ride relaxation. 
+            Girona's popularity among professional cyclists has also created a thriving cycling community, making it an ideal spot for both amateurs and pros alike.
+          </p>
+
+        </div>
+
+        <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Routes</h2>
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="One of the classics. Also known as the Hincapie Loop, and is a good one to start your cycling holidays in Girona."
+            title="Els Angels"
+            id="destinations/spain/girona/elsangels"
+            distance="65"
+            elevation="950"
+          />
+
+          <Route
+            title="Rocacorba"
+            description="An uninspiring climb that leads nowhere was made famous by the pros in preparation of the grand tours."
+            id="destinations/spain/girona/rocacorba"
+            distance="40"
+            elevation="1000"
+          />
+        </div>
+
+
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="Mare de Déu del Mont"
+            description="If a mountain had mood swings, this would be the template. A tough climb that is rewarded by unobstructed views at the top, and a beautiful ride to and from Girona."
+            id="destinations/spain/girona/marededeudelmont"
+            distance="83"
+            elevation="1200"
+          />
+
+          <Route
+            title="Coastal loop"
+            description="That other classic Girona ride."
+            id="destinations/spain/girona/coastal"
+            distance="50"
+            elevation="1500"
+          />
+
+          <Route
+            title="Sant Marti Sacalm"
+            description="A rarely visited climb but in many ways, this is the absolute perfect climb."
+            id="destinations/spain/girona/sacalm"
+            distance="50"
+            elevation="1500"
+          />
+        </div>
+        
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            title="Llemena"
+            description="The thumbs up ride."
+            id="destinations/spain/girona/llemena"
+            distance="62"
+            elevation="700"
+          />
+
+        </div>
+
+        <a href="/destinations"><span class="inline-flex items-baseline mt-4 mb-2">
+          <ArrowLeftIcon className="size-3 mr-2" /> Back to destinations</span>
+        </a>
+
+    </Container>
+  </main>
+</Layout>
