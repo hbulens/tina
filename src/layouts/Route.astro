@@ -4,8 +4,14 @@ import Container from "@/components/Container.astro";
 import RouteVisualizer from "@/components/map/route";
 const { frontmatter } = Astro.props;
 
-const coverImage = "/destinations/" + frontmatter.cover + ".jpg";
-const bgImage = `background-image: url('${coverImage}');height: 60vh`;
+const imgPath = frontmatter.cover?.img ? frontmatter.cover?.img : frontmatter.cover;
+const coverImage = "/destinations/" + imgPath + ".jpg";
+
+const imgHeight  = frontmatter.cover?.height ? frontmatter.cover?.height : "60vh";
+const imgPosition  = frontmatter.cover?.position ? frontmatter.cover?.position : "";
+const bgImage = `background-image: url('${coverImage}');height: ${imgHeight};background-position: ${imgPosition}`;
+
+console.log(bgImage);
 
 import { ArrowLeftIcon, ArrowDownTrayIcon } from "@heroicons/react/24/solid";
 
