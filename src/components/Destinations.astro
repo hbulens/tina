@@ -7,6 +7,7 @@ import destinationsBelgium from './Data/destinations-belgium.json';
 import destinationsItaly from './Data/destinations-italy.json';
 
 import Destination from "./pages/root/destination.astro";
+import Placeholder from "./pages/root/placeholder.astro";
 
 import "../styles/Destinations.css";
 
@@ -18,8 +19,8 @@ import "../styles/Destinations.css";
 <div class="flex-row items-center py-2">
 
     <Destination title="Spain" destinations={destinationsSpain} />
-    <Destination title="France" destinations={destinationsFrance} />
-    <Destination title="Belgium" destinations={destinationsBelgium} />
-    <Destination title="Italy" destinations={destinationsItaly} />
+    <Placeholder title="France" img="/destinations/pyrenees.jpg"  />
+    <Placeholder title="Belgium" img="/destinations/vlaanderen.jpg" />
+    <Placeholder title="Italy" img="/destinations/dolomites/stelvio.jpg" />
 
 </div>

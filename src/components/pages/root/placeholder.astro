@@ -1,0 +1,32 @@
+---
+const { title, img } = Astro.props;
+---
+
+<div class="flex-row items-center py-5">
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
+        <p class="text-4xl sm:text-4 xl px-1 font-medium rounded-md mb-4">
+            {title}
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-4">
+        
+        {[1].map((): any => {
+            const bgImage = `background-image: url('${img}');`;
+            const background = 'h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white';
+
+            return (
+            <div class={`${background} group relative overflow-hidden`} style='/destinations/aw.svg'>
+                <div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-in-out group-hover:scale-110" style={bgImage}></div>
+                <div class="relative z-10 flex-col justify-center items-start gap-[93px] inline-flex">
+                    <div class="flex-col justify-start items-start flex">
+                        <div class="px-[7px] bg-orange-300 rounded-[7px] flex-col justify-start items-start gap-2.5 flex">
+                            <div class="text-3xl font-medium"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            );
+        })}
+    </div>
+</div>
