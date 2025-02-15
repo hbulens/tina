@@ -61,5 +61,14 @@
     "arrow": "/destinations/aw.svg",
     "link": "/destinations/spain/almeria",
     "image": "/destinations/velefique.jpg"
+  },
+  {
+    "id": 9,
+    "name1": "Cádiz",
+    "name2": "",
+    "background": "h-[310px] p-12 bg-black rounded-[45px] shadow-card border border-black justify-between items-center flex text-white",
+    "arrow": "/destinations/aw.svg",
+    "link": "/destinations/spain/cadiz",
+    "image": "/destinations/cadiz/viaverdedelasierra.jpg"
   }
 ]

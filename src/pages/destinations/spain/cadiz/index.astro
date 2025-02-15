@@ -1,0 +1,57 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Container from "@/components/Container.astro";
+import Route from "@/components/route/index.astro";
+import { ArrowLeftIcon } from "@heroicons/react/24/solid";
+---
+
+<style>
+  #header {
+    background-image: url("/destinations/cadiz/viaverdedelasierra.jpg");
+    max-height: 70vh;
+    background-position: 0% 50%;
+  }
+</style>
+
+<Layout title="The Average Cyclist">
+  <header
+    id="header"
+    class="bg-center bg-cover bg-no-repeat bg-fixed flex items-center justify-center h-screen pb-12"
+  >
+    <div class="relative flex flex-col items-center md:flex-row" id="services">
+      <div class=" bg-orange px-8 ">
+        <h1 class="text-6xl mt-2 sm:text-6xl text-center font-mediumrounded-md text-white">
+          Cádiz
+        </h1>
+        <p class="text-lg mt-2 mb-2 font-normal text-center text-white ">
+          Home to a few hidden gems, Cádiz is a great place to explore by bike. 
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="space-y-20 mt-8">
+    <Container>
+      <div>
+        <div class="mb-12 w-full">
+          <p class="mb-4">
+            Calp, a charming coastal town in Spain's Costa Blanca, is a top cycling destination renowned for its stunning Mediterranean scenery and challenging routes. Dominated by the iconic Peñón de Ifach rock, Calp offers cyclists a mix of coastal roads with breathtaking sea views and inland routes that wind through rolling hills and picturesque villages. The town's mild climate and well-maintained roads make it an ideal spot for year-round cycling. Whether you're tackling the famous climbs like the Col de Rates or enjoying a leisurely ride along the coastline, Calp provides an exceptional setting for cyclists of all levels.
+        </div>
+
+        <h2 class="text-3xl font-medium leading-none mb-5 mt-8">Gravel</h2>
+        <div class="flex flex-col w-full mb-5 md:flex-row">
+          <Route
+            description="A wonderful and peaceful ride along an abandoned railway track that has been converted into a cycling and hiking path."
+            title="Vía Verde de la Sierra"
+            id="destinations/spain/cadiz/gravel/via-verde-de-la-sierra"
+            distance="50"
+            elevation="1050"
+          />
+
+        </div>        
+    
+        <a href="/destinations"><span class="inline-flex items-baseline mt-4 mb-2"><ArrowLeftIcon className="size-3 mr-2" /> Back to destinations</span></a>
+
+    </Container>
+  </main>
+</Layout>
